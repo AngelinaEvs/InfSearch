@@ -1,0 +1,343 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<HTML lang="ru">
+
+<HEAD>
+<TITLE>И. А. Бунин. Темные аллеи. Текст произведения</TITLE>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<META NAME="Keywords" CONTENT="русская классическая литература интернет-библиотека Алексея Комарова текст читать Иван Бунин Темные аллеи">
+<META NAME="Description" CONTENT='Иван Бунин. Темные аллеи. Текст произведения. Источник: И. А. Бунин. Стихотворения. Рассказы. Повести. Библиотека Всемирной литературы, М.: Художественная литература, 1973. Интернет-библиотека Алексея Комарова'>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
+<style>
+.hdr {border-bottom:2px solid #7f7f96;background-color:#e6e0d3;background-image:url(/i/dark_bg_oldpaper.gif);background-position-x:right;text-align:right;height:3.6em;position:relative;display:flex;justify-content:flex-end;align-items:flex-end}
+.qson {white-space:nowrap;margin:0em;padding:0.1em 0em;font-size:100%}
+#lmini {display:none;width:4.9em;height:2.5em;position:absolute}
+#lmaxi {width:12em;height:3.6em;position:absolute}
+#lmidi {width:12em;height:3.6em;position:absolute}
+#smg {display:inline-block;width:1em;height:1.2em;vertical-align:middle;margin-bottom:0em}
+.ma {padding:0.5em 1em;border:1px solid #7f7f96;display:inline-block;height:1.2em;border-bottom:0px}
+.l {margin:0em;top:0;left:0;padding:0em;position:relative;width:100%;display:flex;align-items:stretch}
+#lft {padding:1em 2em;}
+.ang0 {position:relative;width:.6em;height:1.2em}
+.ang {position:absolute;border:.6em solid transparent;width:0px;height:0px}
+.la1 {border-right-color:#222;border-left-width:0px}
+.la2 {left:2px;border-right-color:#e3e0d7;border-left-width:0px}
+.ra1 {left:2px;border-left-color:#222;border-right-width:0em;margin-left:0.46em}
+.ra2 {border-left-color:#e3e0d7;border-right-width:0px;margin-left:0.46em}
+.ha {border-top: 2px solid black;margin-top:-1px}
+.me {text-decoration:underline;color:#006}
+.me:hover {cursor:pointer}
+.sb {background-color:#d6d0c3;display:flex;align-items:center;padding:0em 1em;border:1px solid #7f7f96;border-left:0px}
+.sb:hover {cursor:pointer}
+</style>
+<link rel=stylesheet type="text/css" href="/etc/styles3.css" title="style">
+<script src="https://yandex.ru/ads/system/header-bidding.js" async></script>
+<script>
+    window.Ya || (window.Ya = {});
+    window.yaContextCb = window.yaContextCb || [];
+    window.Ya.adfoxCode || (window.Ya.adfoxCode = {});
+    window.Ya.adfoxCode.hbCallbacks || (window.Ya.adfoxCode.hbCallbacks = []);
+</script>
+<script src="https://yandex.ru/ads/system/context.js" async></script>
+
+<script>
+    function renderAdFoxAd(adFoxConfig, adUnit) {
+        window.Ya.adfoxCode.hbCallbacks.push(function () {
+            window.Ya.headerBidding.pushAdUnits([adUnit]);
+            window.yaContextCb.push(function () {
+                window.Ya.adfoxCode.create(adFoxConfig);
+            });
+        });
+    }
+
+    function destroyAdFoxAd(adBlockId) {
+        window.yaContextCb.push(() => {
+            Ya.adfoxCode.destroy(adBlockId);
+        });
+    }
+
+    function buildAdBlock(containerDivId, adBlockId) {
+        let container = document.getElementById(containerDivId);
+
+        let adBlock = document.createElement('div');
+        adBlock.setAttribute('id', adBlockId);
+
+        return container.insertAdjacentElement('afterbegin', adBlock);
+    }
+</script>
+
+<script async src="https://cdn.skcrtxr.com/roxot-wrapper/js/roxot-manager.js?pid=8c86a31e-948e-4d37-9b5a-304d2fbc4c0c"></script>
+
+<script src="/js/adplacements3.js"></script>
+</HEAD>
+
+<BODY>
+<div id="shdw" style="z-index:500;width:100vw;height:100vh;position:fixed;top:0px;left:0px;background-color:#000;opacity:.2;display:none"></div>
+<iframe id="loginFrame" name="loginFrame" style="border:0px;z-index:2000;width:100vw;height:100vh;position:fixed;top:0px;left:0px;display:none;"></iframe>
+<div>
+<script>
+lgl=0;
+function ge(e){return document.getElementById(e);}
+function ow(e){return e.offsetWidth}
+function oh(e){return e.offsetHeight}
+function showLogin(){var lf=ge("loginFrame");var cw=lf.contentWindow;if(cw.location.pathname!="/loginFrame.phtml"){cw.location.assign("/loginFrame.phtml");}lf.style.display="block";ge("shdw").style.display="block";cw.focus();}
+function Logout(){
+ var r=new XMLHttpRequest();
+ r.open('POST', '/userlogout.phtml', true);
+ r.send();
+ r.onreadystatechange=function() {
+  if (r.readyState === 4) {	
+   if (r.status >= 200 && r.status < 300)
+    document.location.reload(true);
+  }
+ }
+}
+poems=[];lbs=[];lbcs=[];rbs=[];rbcs=[];
+function toggle_sf(){qs_e=ge('qs1');hdr_e=ge('hdr');qi_e=ge('qi1');if (qs_e.className=='qson') {qs_e.className = "qsoff";hdr_e.className="hdr2";qi1.focus()}else{qs_e.className = "qson";hdr_e.className="hdr";}}
+window.addEventListener("click",function(e){
+qs_e=ge('qs1');hdr_e=ge('hdr');qi_e=ge('qi1');thm_e=ge("thm");am1_e=ge("am1");sldr_e=ge("sldr1");
+eid=document.elementFromPoint(e.clientX, e.clientY).id;
+if(am1_e!==null)if(eid!=="am1"&&am1_e.className=="am1min"&&eid!="amm"&&eid!="mmm")am1_e.className="am1";
+if(thm_e!==null)if(eid!=="thm"&&thm_e.className=="thmmin")thm_e.className="thm";
+if(sldr_e!==null){
+	if(eid=="sldr1")showThemes();
+}
+if(eid=="lio"){var m=ge("lio");if(m.innerHTML=="Вход")showLogin();else Logout();}
+if(eid=="sb"||eid=="sb1"){document.forms.sf2.submit();}
+},true);
+</script>
+<span id="svg"></span>
+<div id="hdr" class="hdr">
+ <div class="logo">
+  <div class="logo1">
+   <a href="/">
+    <div id="lmini"><svg style="width:4.9em;height:2.5em" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1500" height="1600" viewBox="800 15 1500 1600"><use xlink:href="#logoMini" /></svg></div>
+    <div id="lmaxi"><svg style="width:12em;height:3.6em" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1500" height="1600" viewBox="400 15 330 352"><use xlink:href="#logoBg" /><use xlink:href="#logoMaxi" /></svg></div>
+    <div id="lmidi"><svg style="width:12em;height:3.6em" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1500" height="1600" viewBox="400 15 330 352"><use xlink:href="#logoMidi" /></svg></div>
+   </a>
+	</div>
+ </div>
+ <div id="qs1" class="qson">
+  <form id="sf2" method=get action="/search.phtml"><div id="sf1" style="display:flex;align-items:stretch">
+	<div><input class="tf" id="qi1" size=200 type="text" name="q" placeholder="Поиск: автор и/или название произведения" value=""></div>
+	<div id="sb" class="sb" style="">
+	<input id="ss" type="submit" value="Найти"><span id="smg"><svg id="sb1" version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="60 0 115 140">
+<use xlink:href="#mglass" /></svg></span></div></div></form></div>
+<div id="sm" class="m"><a style="width:1.2em;white-space:nowrap" href="#" class="ma" onclick="toggle_sf();">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="65 18 115 115"><use xlink:href="#mglass" /></svg>
+</a></div>
+<div class="m"><a href="/author.html" class="ma">Авторы</a></div>
+<div class="spce">&nbsp;</div>
+</div>
+<div id="ex" class="l">
+<div id="lft0">
+<div style="display:flex;justify-content:space-between;flex-direction:column">
+<div id="ttop">
+<div id="tyad" style="display:none"><div id="tya"><div id="ty"></div></div>
+<script>
+if (ge('lft0').offsetWidth > 599) {
+	ge('tyad').style.display="block";
+		window.yaContextCb.push(()=>{
+		Ya.Context.AdvManager.render({
+		    renderTo: 'ty',
+		    blockId: 'R-A-447573-2'
+		  })
+		})
+}
+</script>
+</div>
+<div id="lft">
+
+	<div id="text" class="t hya">
+	<div id="thdr" class="thdr">
+<a href="/author/bunin/index.html">И. А. Бунин</a>. <a href="/text/1021/index.html">Темные аллеи</a></div>
+
+<div class=author><span class="p"><span class=fi></span>Иван Бунин</span></div>
+<div class=title><h1>Темные аллеи</h1></div>
+<span class="p"><span class=fi></span>В холодное осеннее ненастье, на одной из больших тульских дорог, залитой дождями и изрезанной многими черными колеями, к длинной избе, в одной связи которой была казенная почтовая станция, а в другой частная горница, где можно было отдохнуть или переночевать, пообедать или спросить самовар, подкатил закиданный грязью тарантас с полуподнятым верхом, тройка довольно простых лошадей с подвязанными от слякоти хвостами. На козлах тарантаса сидел крепкий мужик в туго подпоясанном армяке, серьезный и темноликий, с редкой смоляной бородой, похожий на старинного разбойника, а в тарантасе стройный старик-военный в большом картузе и в николаевской серой шинели с бобровым стоячим воротником, еще чернобровый, но с белыми усами, которые соединялись с такими же бакенбардами; подбородок у него был пробрит и вся наружность имела то сходство с Александром II, которое столь распространено было среди военных в пору его царствования; взгляд был тоже вопрошающий, строгий и вместе с тем усталый.</span>
+<span class="p"><span class=fi></span>Когда лошади стали, он выкинул из тарантаса ногу в военном сапоге с ровным голенищем и, придерживая руками в замшевых перчатках полы шинели, взбежал на крыльцо избы.</span>
+<span class="p"><span class=fi></span>&mdash; Налево, ваше превосходительство, &mdash; грубо крикнул с козел кучер, и он, слегка нагнувшись на пороге от своего высокого роста, вошел в сенцы, потом в горницу налево.</span>
+<span class="p"><span class=fi></span>В горнице было тепло, сухо и опрятно: новый золотистый образ в левом углу, под ним покрытый чистой суровой скатертью стол, за столом чисто вымытые лавки; кухонная печь, занимавшая дальний правый угол, ново белела мелом; ближе стояло нечто вроде тахты, покрытой пегими попонами, упиравшейся отвалом в бок печи; из-за печной заслонки сладко пахло щами &mdash; разварившейся капустой, говядиной и лавровым листом.</span>
+<span class="p"><span class=fi></span>Приезжий сбросил на лавку шинель и оказался еще стройнее в одном мундире и в сапогах, потом снял перчатки и картуз и с усталым видом провел бледной худой рукой по голове &mdash; седые волосы его с начесами на висках к углам глаз слегка курчавились, красивое удлиненное лицо с темными глазами хранило кое-где мелкие следы оспы. В горнице никого не было, и он неприязненно крикнул, приотворив дверь в сенцы:</span>
+<span class="p"><span class=fi></span>&mdash; Эй, кто там!</span>
+<span class="p"><span class=fi></span>Тотчас вслед за тем в горницу вошла темноволосая, тоже чернобровая и тоже еще красивая не по возрасту женщина, похожая на пожилую цыганку, с темным пушком на верхней губе и вдоль щек, легкая на ходу, но полная, с большими грудями под красной кофточкой, с треугольным, как у гусыни, животом под черной шерстяной юбкой.</span>
+<span class="p"><span class=fi></span>&mdash; Добро пожаловать, ваше превосходительство, &mdash; сказала она. &mdash; Покушать изволите или самовар прикажете?</span>
+<span class="p"><span class=fi></span>Приезжий мельком глянул на ее округлые плечи и на легкие ноги в красных поношенных татарских туфлях и отрывисто, невнимательно ответил:</span>
+<span class="p"><span class=fi></span>&mdash; Самовар. Хозяйка тут или служишь?</span>
+<span class="p"><span class=fi></span>&mdash; Хозяйка, ваше превосходительство.</span>
+<span class="p"><span class=fi></span>&mdash; Сама, значит, держишь?</span>
+<span class="p"><span class=fi></span>&mdash; Так точно. Сама.</span>
+<span class="p"><span class=fi></span>&mdash; Что ж так? Вдова, что ли, что сама ведешь дело?</span>
+<span class="p"><span class=fi></span>&mdash; Не вдова, ваше превосходительство, а надо же чем-нибудь жить. И хозяйствовать я люблю.</span>
+<span class="p"><span class=fi></span>&mdash; Так, так. Это хорошо. И как чисто, приятно у тебя.</span>
+<span class="p"><span class=fi></span>Женщина все время пытливо смотрела на него, слегка щурясь.</span>
+<span class="p"><span class=fi></span>&mdash; И чистоту люблю, &mdash; ответила она. &mdash; Ведь при господах выросла, как не уметь прилично себя держать, Николай Алексеевич.</span>
+<span class="p"><span class=fi></span>Он быстро выпрямился, раскрыл глаза и покраснел.</span>
+<span class="p"><span class=fi></span>&mdash; Надежда! Ты? &mdash; сказал он торопливо.</span>
+<span class="p"><span class=fi></span>&mdash; Я, Николай Алексеевич, &mdash; ответила она.</span>
+<span class="p"><span class=fi></span>&mdash; Боже мой, боже мой! &mdash; сказал он, садясь на лавку и в упор глядя на нее. &mdash; Кто бы мог подумать! Сколько лет мы не видались? Лет тридцать пять?</span>
+<span class="p"><span class=fi></span>&mdash; Тридцать, Николай Алексеевич. Мне сейчас сорок восемь, а вам под шестьдесят, думаю?</span>
+<span class="p"><span class=fi></span>&mdash; Вроде этого... Боже мой, как странно!</span>
+<span class="p"><span class=fi></span>&mdash; Что странно, сударь?</span>
+<span class="p"><span class=fi></span>&mdash; Но все, все... Как ты не понимаешь!</span>
+<span class="p"><span class=fi></span>Усталость и рассеянность его исчезли, он встал и решительно заходил по горнице, глядя в пол. Потом остановился и, краснея сквозь седину, стал говорить:</span>
+<span class="p"><span class=fi></span>&mdash; Ничего не знаю о тебе с тех самых пор. Как ты сюда попала? Почему не осталась при господах?</span>
+<span class="p"><span class=fi></span>&mdash; Мне господа вскоре после вас вольную дали.</span>
+<span class="p"><span class=fi></span>&mdash; А где жила потом?</span>
+<span class="p"><span class=fi></span>&mdash; Долго рассказывать, сударь.</span>
+<span class="p"><span class=fi></span>&mdash; Замужем, говоришь, не была?</span>
+<span class="p"><span class=fi></span>&mdash; Нет, не была.</span>
+<span class="p"><span class=fi></span>&mdash; Почему? При такой красоте, которую ты имела?</span>
+<span class="p"><span class=fi></span>&mdash; Не могла я этого сделать.</span>
+<span class="p"><span class=fi></span>&mdash; Отчего не могла? Что ты хочешь сказать?</span>
+<span class="p"><span class=fi></span>&mdash; Что ж тут объяснять. Небось помните, как я вас любила.</span>
+<span class="p"><span class=fi></span>Он покраснел до слез и, нахмурясь, опять зашагал.</span>
+<span class="p"><span class=fi></span>&mdash; Все проходит, мой друг, &mdash; забормотал он. &mdash; Любовь, молодость &mdash; все, все. История пошлая, обыкновенная. С годами все проходит. Как это сказано в книге Иова? &laquo;Как о воде протекшей будешь вспоминать&raquo;.</span>
+<span class="p"><span class=fi></span>&mdash; Что кому бог дает, Николай Алексеевич. Молодость у всякого проходит, а любовь &mdash; другое дело.</span>
+<span class="p"><span class=fi></span>Он поднял голову и, остановясь, болезненно усмехнулся:</span>
+<span class="p"><span class=fi></span>&mdash; Ведь не могла же ты любить меня весь век!</span>
+<span class="p"><span class=fi></span>&mdash; Значит, могла. Сколько ни проходило времени, все одним жила. Знала, что давно вас нет прежнего, что для вас словно ничего и не было, а вот... Поздно теперь укорять, а ведь, правда, очень бессердечно вы меня бросили, &mdash; сколько раз я хотела руки на себя наложить от обиды от одной, уж не говоря обо всем прочем. Ведь было время, Николай Алексеевич, когда я вас Николенькой звала, а вы меня &mdash; помните как? И все стихи мне изволили читать про всякие &laquo;темные аллеи&raquo;, &mdash; прибавила она с недоброй улыбкой.</span>
+<span class="p"><span class=fi></span>&mdash; Ах, как хороша ты была! &mdash; сказал он, качая головой. &mdash; Как горяча, как прекрасна! Какой стан, какие глаза! Помнишь, как на тебя все заглядывались?</span>
+<span class="p"><span class=fi></span>&mdash; Помню, сударь. Были и вы отменно хороши. И ведь это вам отдала я свою красоту, свою горячку. Как же можно такое забыть.</span>
+<span class="p"><span class=fi></span>&mdash; А! Все проходит. Все забывается.</span>
+<span class="p"><span class=fi></span>&mdash; Все проходит, да не все забывается.</span>
+<span class="p"><span class=fi></span>&mdash; Уходи, &mdash; сказал он, отворачиваясь и подходя к окну. &mdash; Уходи, пожалуйста.</span>
+<span class="p"><span class=fi></span>И, вынув платок и прижав его к глазам, скороговоркой прибавил:</span>
+<span class="p"><span class=fi></span>&mdash; Лишь бы бог меня простил. А ты, видно, простила.</span>
+<span class="p"><span class=fi></span>Она подошла к двери и приостановилась:</span>
+<span class="p"><span class=fi></span>&mdash; Нет, Николай Алексеевич, не простила. Раз разговор наш коснулся до наших чувств, скажу прямо: простить я вас никогда не могла. Как не было у меня ничего дороже вас на свете в ту пору, так и потом не было. Оттого-то и простить мне вас нельзя. Ну да что вспоминать, мертвых с погоста не носят.</span>
+<span class="p"><span class=fi></span>&mdash; Да, да, не к чему, прикажи подавать лошадей, &mdash; ответил он, отходя от окна уже со строгим лицом. &mdash; Одно тебе скажу: никогда я не был счастлив в жизни, не думай, пожалуйста. Извини, что, может быть, задеваю твое самолюбие, но скажу откровенно, &mdash; жену я без памяти любил. А изменила, бросила меня еще оскорбительней, чем я тебя. Сына обожал, &mdash; пока рос, каких только надежд на него не возлагал! А вышел негодяй, мот, наглец, без сердца, без чести, без совести... Впрочем, все это тоже самая обыкновенная, пошлая история. Будь здорова, милый друг. Думаю, что и я потерял в тебе самое дорогое, что имел в жизни.</span>
+<span class="p"><span class=fi></span>Она подошла и поцеловала у него руку, он поцеловал у нее.</span>
+<span class="p"><span class=fi></span>&mdash; Прикажи подавать...</span>
+<span class="p"><span class=fi></span>Когда поехали дальше, он хмуро думал: &laquo;Да, как прелестна была! Волшебно прекрасна!&raquo; Со стыдом вспоминал свои последние слова и то, что поцеловал у ней руку, и тотчас стыдился своего стыда. &laquo;Разве неправда, что она дала мне лучшие минуты жизни?&raquo;</span>
+<span class="p"><span class=fi></span>К закату проглянуло бледное солнце. Кучер гнал рысцой, все меняя черные колеи, выбирая менее грязные, и тоже что-то думал. Наконец сказал с серьезной грубостью:</span>
+<span class="p"><span class=fi></span>&mdash; А она, ваше превосходительство, все глядела в окно, как мы уезжали. Верно, давно изволите знать ее?</span>
+<span class="p"><span class=fi></span>&mdash; Давно, Клим.</span>
+<span class="p"><span class=fi></span>&mdash; Баба &mdash; ума палата. И все, говорят, богатеет. Деньги в рост дает.</span>
+<span class="p"><span class=fi></span>&mdash; Это ничего не значит.</span>
+<span class="p"><span class=fi></span>&mdash; Как не значит! Кому ж не хочется получше пожить! Если с совестью давать, худого мало. И она, говорят, справедлива на это. Но крута! Не отдал вовремя &mdash; пеняй на себя.</span>
+<span class="p"><span class=fi></span>&mdash; Да, да, пеняй на себя... Погоняй, пожалуйста, как бы не опоздать нам к поезду...</span>
+<span class="p"><span class=fi></span>Низкое солнце желто светило на пустые поля, лошади ровно шлепали по лужам. Он глядел на мелькавшие подковы, сдвинув черные брови, и думал:</span>
+<span class="p"><span class=fi></span>&laquo;Да, пеняй на себя. Да, конечно, лучшие минуты. И не лучшие, а истинно волшебные! &bdquo;Кругом шиповник алый цвел, стояли темных лип аллеи...&ldquo; Но, боже мой, что же было бы дальше? Что, если бы я не бросил ее? Какой вздор! Эта самая Надежда не содержательница постоялой горницы, а моя жена, хозяйка моего петербургского дома, мать моих детей?&raquo; И, закрывая глаза, качал головой.</span>
+<span class="t_created">20 октября 1938</span>
+<div id="tbd"></div><div id="tnav"><a class="bttn" href="/text/1021/index.html">о тексте</a></div></div><div id="s" style="height:0em"></div>
+<div style="margin:1em -6px;text-align:center">
+<div id="yar"></div>
+</div>
+
+
+
+<script type="text/javascript">
+ pagecontext="text1";
+</script>
+</div></div></div></div>
+
+<div id="f_r1" style="background-color:#e6e0d3;background-image:url(/i/dark_bg_oldpaper.gif);background-position-x:right;">
+<div style="display:flex;height:100%;border-left:1px solid #7f7f96;padding:0em"><div id="in" style="display:flex;flex-direction:column;justify-content:space-between;align-items:center;width:100%">
+<div id="bn1" style="height:100%;width:100%"><div style="position:sticky;top:0em"><div style="padding:.5em 0em;">
+<div style="position:relative;text-align:center;">
+<div id="right-rectangle-stick-1" style="display:inline-block;max-width:400px"></div>
+<script>
+ var user = Object();
+user.paid = false;wx=ow(ge('in'));
+var ry=0;
+displayAd(wx, 610, 'r_top','right-rectangle-stick-1');
+
+
+function gr(e){return e.getBoundingClientRect();}
+</script>
+<div id="gglad" style="display:inline-block;max-width:400px"></div>
+</div></div></div></div>
+<div id="bn2" style="height:100%;width:100%">
+ <div style="position:sticky;top:0em"><div style="padding:.5em 0em">
+  <div style="text-align:center">
+	 <div id="right-rectangle-stick-2" style="display:inline-block;max-width:400px"></div>
+   <div id="btmad" style="display:inline-block;max-width:400px"></div>
+<script>
+   hx=oh(ge('lft'));
+	 displayAd(wx,hx-660,'r_bot','btmad');
+ </script>
+	</div>
+ </div></div>
+</div>
+</div></div>
+</div>
+</div>
+
+</div>
+</div><div id="btmex">
+<div class="btm">
+<div class="copy">
+<div class="bm"><span class="bmi">Email: <a href="mailto:otklik@ilibrary.ru">otklik@ilibrary.ru</a></span><span class="bmi"><a href="/aboutilibrary/">О библиотеке</a></span><span class="bmi"><a href="/reklama.phtml">Реклама на сайте</a></span></div>
+<div>&copy;1996&#151;2023 Алексей Комаров. Подборка&nbsp;произведений, оформление, программирование.</div>
+</div>
+<div id="cntrs">
+<div style="margin:1em">
+<script type="text/javascript"><!--
+document.write("<a href='http://www.liveinternet.ru/click' "+
+"target=_blank><img src='//counter.yadro.ru/hit?t18.4;r"+
+escape(document.referrer)+((typeof(screen)=="undefined")?"":
+";s"+screen.width+"*"+screen.height+"*"+(screen.colorDepth?
+screen.colorDepth:screen.pixelDepth))+";u"+escape(document.URL)+
+";h"+escape(document.title.substring(0,80))+";"+Math.random()+
+"' alt='' title='LiveInternet: показано число просмотров за 24"+
+" часа, посетителей за 24 часа и за сегодня' "+
+"border='0' width='88' height='31'><\/a>")
+//--></script>
+<a href="https://metrika.yandex.ru/stat/?id=5179000&amp;from=informer" target="_blank" rel="nofollow"><img src="https://informer.yandex.ru/informer/5179000/3_0_FFFFF0FF_E0E0D0FF_0_pageviews" style="width:88px; height:31px; border:0;" alt="Яндекс.Метрика" title="Яндекс.Метрика: данные за сегодня (просмотры, визиты и уникальные посетители)" class="ym-advanced-informer" data-cid="5179000" data-lang="ru" /></a>
+<script type="text/javascript" >   (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)}; m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)}) (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym"); ym(5179000, "init", {clickmap:true, trackLinks:true, accurateTrackBounce:true, webvisor:true});</script><noscript><div><img src="https://mc.yandex.ru/watch/5179000" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+</div></div></div></div><script>
+var bscript=document.createElement('script');
+if (lgl==2) bscript.src="/rightbanners_rox3_1.js"; else bscript.src="/rightbanners3_2.js";
+document.head.appendChild(bscript);
+
+function setAd(){
+t_e=ge("text");var ty_e=ge("tyad");
+if(ty_e){if (ow(t_e)>=600)ty_e.style.display="block";else ty_e.style.display="none";}
+}
+function setPoems(){
+t_e=ge("text");
+if(typeof t_e !== 'undefined'){
+var tw=ow(t_e);
+var ss='';
+if(tw>240)for(var i in poems){
+var vls=poems[i].getElementsByClassName("vl");
+var vlim=16;var rsq=0;var lsq=0;var vlmax=0;var invr=0;var invl=0;
+if(vls.length<vlim)vlim=vls.length;
+vlmax=ow(poems[i]);
+for(var j=0;j<vlim;j++){var vlw=ow(vls[j]);if(vlw>vlmax)vlmax=vlw;}
+for(var j=0;j<vlim;j++){var vlw=ow(vls[j]);if(vlw>vlmax/3)rsq+=ow(poems[i])-vlw;else invr++;pdl=getComputedStyle(vls[j]).paddingLeft;pdl=parseFloat(pdl.slice(0,-2));if(pdl<vlmax*.67)lsq+=pdl;else invl++;}
+var width1=rsq/(vlim-invr)/2-lsq/(vlim-invl)/2;
+if(width1+vlmax>tw)width1=tw-vlmax;
+var pmid='#'+poems[i].id;
+ss+=pmid+' div,'+pmid+' h1,'+pmid+' h2,'+pmid+' h3,'+pmid+' h4,'+pmid+' h5 {margin-left:-'+width1+'px;}'+pmid+' .pmm {padding-left:'+width1+'px;margin:0em}'+pmid+' .pm {padding-left:'+width1+'px}';
+}
+pss=document.createElement('style');
+pss.innerHTML=ss;
+document.querySelector('head').appendChild(pss);
+}
+}
+function cleanRules(){if(typeof t_e !=='undefined'){if(ow(ge("text"))>240)pss.parentNode.removeChild(pss);}}
+tbd_e=ge("tbd");
+bnbg_e=ge("bnbg");
+function setArrows(){
+for(var i in lbs){yf=oh(lbcs[i])/oh(lbs[i])*1.2;xf=1+yf/5;lbs[i].style.transform='scale('+xf+','+yf+')';}
+for(var i in rbs){yf=oh(rbcs[i])/oh(rbs[i])*1.2;xf=1+yf/5;rbs[i].style.transform='scale('+xf+','+yf+')';}
+if(bnbg_e != null)if(gr(tbd_e).bottom<document.body.clientHeight-16.8*4)bnbg_e.className="bnv";else bnbg_e.className="rbg";
+}
+setArrows();setPoems();
+window.onscroll=function(){setArrows();}
+
+window.addEventListener('resize',function(){
+	if (typeof(setArrows)!=='undefined') setArrows();
+	if (typeof(cleanRules)!=='undefined') cleanRules();
+	if (typeof(setPoems)!=='undefined') setPoems();
+	if (typeof(setAd)!=='undefined') setAd();
+});
+window.addEventListener('load',function(){showBtmAd();});
+
+</script>
+</div>
+</BODY>
+</HTML>
