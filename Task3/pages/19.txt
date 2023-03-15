@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="ru" data-vue-meta="%7B%22lang%22:%7B%22ssr%22:%22ru%22%7D%7D">
+<head >
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,viewport-fit=cover,maximum-scale=1,user-scalable=0">
+  <meta name="referrer" content="unsafe-url">
+  <title>Какие патенты в сфере финансовых технологий получили российские компании в 2022 году? / Комментарии / Хабр</title>
+  <style>
+    /* cyrillic-ext */
+    @font-face {
+      font-family: 'Fira Sans';
+      font-style: normal;
+      font-weight: 500;
+      font-display: swap;
+      src: url(https://fonts.gstatic.com/s/firasans/v11/va9B4kDNxMZdWfMOD5VnZKveSxf6TF0.woff2) format('woff2');
+      unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+    }
+
+    /* cyrillic */
+    @font-face {
+      font-family: 'Fira Sans';
+      font-style: normal;
+      font-weight: 500;
+      font-display: swap;
+      src: url(https://fonts.gstatic.com/s/firasans/v11/va9B4kDNxMZdWfMOD5VnZKveQhf6TF0.woff2) format('woff2');
+      unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+    }
+
+    /* latin-ext */
+    @font-face {
+      font-family: 'Fira Sans';
+      font-style: normal;
+      font-weight: 500;
+      font-display: swap;
+      src: url(https://fonts.gstatic.com/s/firasans/v11/va9B4kDNxMZdWfMOD5VnZKveSBf6TF0.woff2) format('woff2');
+      unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+    }
+
+    /* latin */
+    @font-face {
+      font-family: 'Fira Sans';
+      font-style: normal;
+      font-weight: 500;
+      font-display: swap;
+      src: url(https://fonts.gstatic.com/s/firasans/v11/va9B4kDNxMZdWfMOD5VnZKveRhf6.woff2) format('woff2');
+      unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+    }
+
+    /* non-breaking hyphen */
+    @font-face {
+      font-family: 'Fira Sans';
+      font-style: normal;
+      font-weight: 500;
+      font-display: swap;
+      src: url(https://fonts.gstatic.com/l/font?kit=KFOlCnqEu92Fr1MmEU9vBh0_IsHAlmrO6g&skey=ee881451c540fdec&v=v29) format('woff2');
+      unicode-range: U+02011;
+    }
+  </style>
+  <link rel="preload" href="https://assets.habr.com/habr-web/css/chunk-vendors.b6238726.css" as="style"><link rel="preload" href="https://assets.habr.com/habr-web/js/chunk-vendors.76685433.js" as="script"><link rel="preload" href="https://assets.habr.com/habr-web/css/app.59c6701f.css" as="style"><link rel="preload" href="https://assets.habr.com/habr-web/js/app.067cb56a.js" as="script"><link rel="preload" href="https://assets.habr.com/habr-web/css/page-article-comments.cc6a301a.css" as="style"><link rel="preload" href="https://assets.habr.com/habr-web/js/page-article-comments.dcfe697f.js" as="script"><link rel="preload" href="https://assets.habr.com/habr-web/js/7298.c8f1d73c.js" as="script">
+  <link rel="stylesheet" href="https://assets.habr.com/habr-web/css/chunk-vendors.b6238726.css"><link rel="stylesheet" href="https://assets.habr.com/habr-web/css/app.59c6701f.css"><link rel="stylesheet" href="https://assets.habr.com/habr-web/css/page-article-comments.cc6a301a.css">
+  <script>window.i18nFetch = new Promise((res, rej) => {
+          const xhr = new XMLHttpRequest();
+          xhr.open('GET', '/js/i18n/ru-compiled.bb54036e20d5f2f436c26e6c1769b6b8.json');
+          xhr.responseType = 'json';
+          xhr.onload = function(e) {
+            if (this.status === 200) {
+              res({ru: xhr.response});
+            } else {
+              rej(e);
+            }
+          };
+          xhr.send();
+        });</script>
+  
+  
+  <script src="//www.googletagservices.com/tag/js/gpt.js" async></script>
+  <style>.grecaptcha-badge{visibility: hidden;}</style>
+  <meta name="habr-version" content="2.116.0">
+  
+  <meta data-vue-meta="ssr" itemprop="image" content="/img/habr_ru.png" data-vmid="image:itemprop"><meta data-vue-meta="ssr" property="og:image" content="/img/habr_ru.png" data-vmid="og:image"><meta data-vue-meta="ssr" property="og:image:width" content="1200" data-vmid="og:image:width"><meta data-vue-meta="ssr" property="og:image:height" content="630" data-vmid="og:image:height"><meta data-vue-meta="ssr" property="aiturec:image" content="/img/habr_ru.png" data-vmid="aiturec:image"><meta data-vue-meta="ssr" name="twitter:image" content="/img/habr_ru.png" data-vmid="twitter:image"><meta data-vue-meta="ssr" property="vk:image" content="/img/habr_ru.png?format=vk" data-vmid="vk:image"><meta data-vue-meta="ssr" property="fb:app_id" content="444736788986613"><meta data-vue-meta="ssr" property="fb:pages" content="472597926099084"><meta data-vue-meta="ssr" name="twitter:card" content="summary_large_image"><meta data-vue-meta="ssr" name="twitter:site" content="@habr_com"><meta data-vue-meta="ssr" property="og:locale" content="ru_RU" data-vmid="og:locale"><meta data-vue-meta="ssr" property="og:type" content="website" data-vmid="og:type"><meta data-vue-meta="ssr" property="og:site_name" content="Хабр" data-vmid="og:site_name"><meta data-vue-meta="ssr" property="og:title" content="Хабр" data-vmid="og:title"><meta data-vue-meta="ssr" property="og:url" content="https://habr.com/ru/company/onlinepatent/blog/722630/comments/" data-vmid="og:url">
+  <link data-vue-meta="ssr" rel="image_src" href="/img/habr_ru.png" data-vmid="image:href"><link data-vue-meta="ssr" href="https://habr.com/ru/rss/post/722630/?fl=ru" type="application/rss+xml" title="" rel="alternate" name="rss"><link data-vue-meta="ssr" href="https://habr.com/ru/company/onlinepatent/blog/722630/" rel="canonical" data-vmid="canonical">
+  <meta name="apple-mobile-web-app-status-bar-style" content="#303b44">
+  <meta name="msapplication-TileColor" content="#629FBC">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="mobile-web-app-capable" content="yes">
+  <link
+    rel="shortcut icon"
+    type="image/png"
+    sizes="16x16"
+    href="https://assets.habr.com/habr-web/img/favicons/favicon-16.png"
+  >
+  <link
+    rel="shortcut icon"
+    type="image/png"
+    sizes="32x32"
+    href="https://assets.habr.com/habr-web/img/favicons/favicon-32.png"
+  >
+  <link
+    rel="apple-touch-icon"
+    type="image/png"
+    sizes="76x76"
+    href="https://assets.habr.com/habr-web/img/favicons/apple-touch-icon-76.png"
+  >
+  <link
+    rel="apple-touch-icon"
+    type="image/png"
+    sizes="120x120"
+    href="https://assets.habr.com/habr-web/img/favicons/apple-touch-icon-120.png"
+  >
+  <link
+    rel="apple-touch-icon"
+    type="image/png"
+    sizes="152x152"
+    href="https://assets.habr.com/habr-web/img/favicons/apple-touch-icon-152.png"
+  >
+  <link
+    rel="apple-touch-icon"
+    type="image/png"
+    sizes="180x180"
+    href="https://assets.habr.com/habr-web/img/favicons/apple-touch-icon-180.png"
+  >
+  <link
+    rel="apple-touch-icon"
+    type="image/png"
+    sizes="256x256"
+    href="https://assets.habr.com/habr-web/img/favicons/apple-touch-icon-256.png"
+  >
+  <link
+    rel="apple-touch-startup-image"
+    media="screen and (device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)"
+    href="https://assets.habr.com/habr-web/img/splashes/splash_1136x640.png"
+  >
+  <link
+    rel="apple-touch-startup-image"
+    media="screen and (device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)"
+    href="https://assets.habr.com/habr-web/img/splashes/splash_2436x1125.png"
+  >
+  <link
+    rel="apple-touch-startup-image"
+    media="screen and (device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)"
+    href="https://assets.habr.com/habr-web/img/splashes/splash_1792x828.png"
+  >
+  <link
+    rel="apple-touch-startup-image"
+    media="screen and (device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)"
+    href="https://assets.habr.com/habr-web/img/splashes/splash_828x1792.png"
+  >
+  <link
+    rel="apple-touch-startup-image"
+    media="screen and (device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)"
+    href="https://assets.habr.com/habr-web/img/splashes/splash_1334x750.png"
+  >
+  <link
+    rel="apple-touch-startup-image"
+    media="screen and (device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)"
+    href="https://assets.habr.com/habr-web/img/splashes/splash_1242x2668.png"
+  >
+  <link
+    rel="apple-touch-startup-image"
+    media="screen and (device-width: 414px) and (device-height: 736px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)"
+    href="https://assets.habr.com/habr-web/img/splashes/splash_2208x1242.png"
+  >
+  <link
+    rel="apple-touch-startup-image"
+    media="screen and (device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)"
+    href="https://assets.habr.com/habr-web/img/splashes/splash_1125x2436.png"
+  >
+  <link
+    rel="apple-touch-startup-image"
+    media="screen and (device-width: 414px) and (device-height: 736px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)"
+    href="https://assets.habr.com/habr-web/img/splashes/splash_1242x2208.png"
+  >
+  <link
+    rel="apple-touch-startup-image"
+    media="screen and (device-width: 1024px) and (device-height: 1366px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)"
+    href="https://assets.habr.com/habr-web/img/splashes/splash_2732x2048.png"
+  >
+  <link
+    rel="apple-touch-startup-image"
+    media="screen and (device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)"
+    href="https://assets.habr.com/habr-web/img/splashes/splash_2688x1242.png"
+  >
+  <link
+    rel="apple-touch-startup-image"
+    media="screen and (device-width: 834px) and (device-height: 1112px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)"
+    href="https://assets.habr.com/habr-web/img/splashes/splash_2224x1668.png"
+  >
+  <link
+    rel="apple-touch-startup-image"
+    media="screen and (device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)"
+    href="https://assets.habr.com/habr-web/img/splashes/splash_750x1334.png"
+  >
+  <link
+    rel="apple-touch-startup-image"
+    media="screen and (device-width: 1024px) and (device-height: 1366px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)"
+    href="https://assets.habr.com/habr-web/img/splashes/splash_2048x2732.png"
+  >
+  <link
+    rel="apple-touch-startup-image"
+    media="screen and (device-width: 834px) and (device-height: 1194px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)"
+    href="https://assets.habr.com/habr-web/img/splashes/splash_2388x1668.png"
+  >
+  <link
+    rel="apple-touch-startup-image"
+    media="screen and (device-width: 834px) and (device-height: 1112px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)"
+    href="https://assets.habr.com/habr-web/img/splashes/splash_1668x2224.png"
+  >
+  <link
+    rel="apple-touch-startup-image"
+    media="screen and (device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)"
+    href="https://assets.habr.com/habr-web/img/splashes/splash_640x1136.png"
+  >
+  <link
+    rel="apple-touch-startup-image"
+    media="screen and (device-width: 834px) and (device-height: 1194px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)"
+    href="https://assets.habr.com/habr-web/img/splashes/splash_1668x2388.png"
+  >
+  <link
+    rel="apple-touch-startup-image"
+    media="screen and (device-width: 768px) and (device-height: 1024px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)"
+    href="https://assets.habr.com/habr-web/img/splashes/splash_2048x1536.png"
+  >
+  <link
+    rel="apple-touch-startup-image"
+    media="screen and (device-width: 768px) and (device-height: 1024px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)"
+    href="https://assets.habr.com/habr-web/img/splashes/splash_1536x2048.png"
+  >
+  <link
+    rel="mask-icon"
+    color="#77a2b6"
+    href="https://assets.habr.com/habr-web/img/favicons/apple-touch-icon-120.svg"
+  >
+  <link
+    crossorigin="use-credentials"
+    href="/manifest.webmanifest"
+    rel="manifest"
+  >
+  <script async src="https://unpkg.com/pwacompat" crossorigin="anonymous"></script>
+  <script>window.yaContextCb = window.yaContextCb || []</script>
+  <script src="https://yandex.ru/ads/system/context.js" async></script>
+</head>
+<body>
+
+
+<div id="app" data-server-rendered="true" data-async-called="true"><div class="tm-layout__wrapper"><!----> <div></div> <div class="tm-feature tm-feature"><!----></div> <header class="tm-header"><div class="tm-page-width"><div class="tm-header__container"><div class="tm-header__burger-nav"><button type="button" class="tm-header__button tm-header__button_burger"><svg height="16" width="16" class="tm-svg-img tm-header__icon tm-header__icon-burger"><title>Меню</title> <use xlink:href="/img/megazord-v28.617e16ca..svg#header-burger"></use></svg></button></div> <span class="tm-header__logo-wrap"><a href="/ru/" class="tm-header__logo tm-header__logo_ru"><svg height="16" width="16" class="tm-svg-img tm-header__icon"><title>Хабр</title> <use xlink:href="/img/habr-logo-ru.svg#logo"></use></svg></a> <span class="tm-header__beta-sign" style="display:none;">β</span></span> <!----> <div class="tm-header-user-menu tm-header_user-menu"><a href="/ru/search/" class="tm-header-user-menu__item tm-header-user-menu__search"><svg height="24" width="24" class="tm-svg-img tm-header-user-menu__icon tm-header-user-menu__icon_search"><title>Поиск</title> <use xlink:href="/img/megazord-v28.617e16ca..svg#search"></use></svg></a> <!----> <!----> <!----> <div class="tm-header-user-menu__item"><button data-test-id="menu-toggle-guest" class="tm-header-user-menu__toggle"><svg height="24" width="24" class="tm-svg-img tm-header-user-menu__icon tm-header-user-menu__icon_white"><title>Профиль</title> <use xlink:href="/img/megazord-v28.617e16ca..svg#header-user"></use></svg></button> <!----></div> <!----></div></div></div></header> <div class="tm-layout"><div class="tm-page-progress-bar"></div> <!----> <!----> <div class="tm-page-width"></div> <main class="tm-layout__container"><div hl="ru" companyName="onlinepatent" data-async-called="true" class="tm-page"><div class="tm-page-width"><!----> <div class="tm-page__wrapper"><div class="tm-page__main tm-page__main_has-sidebar"><div class="pull-down"><!----> <div class="pull-down__header" style="height:0px;"><div class="pull-down__content" style="bottom:10px;"><svg height="24" width="24" class="tm-svg-img pull-down__arrow"><title>Обновить</title> <use xlink:href="/img/megazord-v28.617e16ca..svg#pull-arrow"></use></svg></div></div> <article class="tm-article-comments__article-body"><div class="tm-article-comments__article-snippet"><div class="tm-article-snippet tm-article-snippet"><div class="tm-article-snippet__meta-container"><div class="tm-article-snippet__meta"><span class="tm-user-info tm-article-snippet__author"><a href="/ru/users/Oksana_Nedvigina/" title="Oksana_Nedvigina" class="tm-user-info__userpic"><div class="tm-entity-image"><svg height="32" width="32" class="tm-svg-img tm-image-placeholder tm-image-placeholder_pink"><!----> <use xlink:href="/img/megazord-v28.617e16ca..svg#placeholder-user"></use></svg></div></a> <span class="tm-user-info__user"><a href="/ru/users/Oksana_Nedvigina/" class="tm-user-info__username">
+      Oksana_Nedvigina
+      <!----></a> <span class="tm-article-datetime-published"><time datetime="2023-03-15T16:01:40.000Z" title="2023-03-15, 19:01">2 часа назад</time></span></span></span></div> <!----></div> <h1 class="tm-article-snippet__title tm-article-snippet__title_h1"><a href="/ru/company/onlinepatent/blog/722630/" data-article-link="" class="tm-article-snippet__title-link router-link-active"><span>Какие патенты в сфере финансовых технологий получили российские компании в 2022 году?</span></a></h1> <div class="tm-article-snippet__stats"><div class="tm-article-complexity tm-article-complexity_complexity-low"><span class="tm-svg-icon__wrapper tm-article-complexity__icon"><svg height="24" width="24" class="tm-svg-img tm-svg-icon"><title>Уровень сложности</title> <use xlink:href="/img/megazord-v28.617e16ca..svg#complexity-low"></use></svg></span> <span class="tm-article-complexity__label">
+    Простой
+  </span></div> <div class="tm-article-reading-time"><span class="tm-svg-icon__wrapper tm-article-reading-time__icon"><svg height="24" width="24" class="tm-svg-img tm-svg-icon"><title>Время на прочтение</title> <use xlink:href="/img/megazord-v28.617e16ca..svg#clock"></use></svg></span> <span class="tm-article-reading-time__label">
+    5 мин
+  </span></div> <span class="tm-icon-counter tm-data-icons__item"><svg height="24" width="24" class="tm-svg-img tm-icon-counter__icon"><title>Количество просмотров</title> <use xlink:href="/img/megazord-v28.617e16ca..svg#counter-views"></use></svg> <span class="tm-icon-counter__value">177</span></span></div> <div class="tm-article-snippet__hubs-container"><div class="tm-article-snippet__hubs"><span class="tm-article-snippet__hubs-item"><a href="/ru/company/onlinepatent/blog/" class="tm-article-snippet__hubs-item-link router-link-active"><span>Блог компании Онлайн Патент</span> <!----></a></span><span class="tm-article-snippet__hubs-item"><a href="/ru/hub/read/" class="tm-article-snippet__hubs-item-link"><span>Читальный зал</span> <!----></a></span><span class="tm-article-snippet__hubs-item"><a href="/ru/hub/patents/" class="tm-article-snippet__hubs-item-link"><span>Патентование</span> <span title="Профильный хаб" class="tm-article-snippet__profiled-hub">*</span></a></span><span class="tm-article-snippet__hubs-item"><a href="/ru/hub/popular_science/" class="tm-article-snippet__hubs-item-link"><span>Научно-популярное</span> <!----></a></span></div></div> <div class="tm-article-snippet__labels-container"><div class="tm-article-snippet__labels"><div class="tm-article-snippet__label tm-article-snippet__label_variant-review"><span>
+          Обзор
+        </span></div> </div></div> <!----> <!----></div> <div class="tm-data-icons"><!----> <div class="tm-votes-meter tm-data-icons__item"><svg height="24" width="24" class="tm-svg-img tm-votes-meter__icon tm-votes-meter__icon tm-votes-meter__icon_appearance-article"><title>Всего голосов 6: ↑4 и ↓2</title> <use xlink:href="/img/megazord-v28.617e16ca..svg#counter-rating"></use></svg> <span title="Всего голосов 6: ↑4 и ↓2" class="tm-votes-meter__value tm-votes-meter__value tm-votes-meter__value_positive tm-votes-meter__value_appearance-article tm-votes-meter__value_rating">+2</span></div> <!----> <button title="Добавить в закладки" type="button" class="bookmarks-button tm-data-icons__item"><span class="tm-svg-icon__wrapper bookmarks-button__icon"><svg height="24" width="24" class="tm-svg-img tm-svg-icon"><title>Добавить в закладки</title> <use xlink:href="/img/megazord-v28.617e16ca..svg#counter-favorite"></use></svg></span> <span title="Количество пользователей, добавивших публикацию в закладки" class="bookmarks-button__counter">
+    5
+  </span></button> <div title="Поделиться" class="tm-sharing tm-data-icons__item"><button type="button" class="tm-sharing__button"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" class="tm-sharing__icon"><path fill="currentColor" d="M13.8 13.8V18l7.2-6.6L13.8 5v3.9C5 8.9 3 18.6 3 18.6c2.5-4.4 6-4.8 10.8-4.8z"></path></svg></button> <DIV class="v-portal" style="display:none;"></DIV></div> <div title="Читать комментарии" class="tm-article-comments-counter-link tm-data-icons__item"><a href="/ru/company/onlinepatent/blog/722630/comments/" aria-current="page" class="tm-article-comments-counter-link__link"><svg height="24" width="24" class="tm-svg-img tm-article-comments-counter-link__icon"><title>Комментарии</title> <use xlink:href="/img/megazord-v28.617e16ca..svg#counter-comments"></use></svg> <span class="tm-article-comments-counter-link__value">
+      0
+    </span></a> <!----></div> <!----> <DIV class="v-portal" style="display:none;"></DIV></div></div></article> <!----> <div data-async-called="true" class="tm-article-comments-offloaded"><div class="tm-article-comments"><div class="tm-comments-wrapper"><div class="tm-comments-wrapper__wrapper"><header class="tm-comments-wrapper__header"><h2 class="tm-comments-wrapper__title">
+        Комментарии
+        <!----></h2> <div class="tm-comments-wrapper__header-aside"><!----> <button class="tm-rss-button tm-rss-button_comments-header"><span class="tm-svg-icon__wrapper tm-rss-button__icon"><svg height="16" width="16" class="tm-svg-img tm-svg-icon"><title>Скопировать ссылку на RSS</title> <use xlink:href="/img/megazord-v28.617e16ca..svg#rss"></use></svg></span></button> <!----></div></header> <div class="tm-comments-wrapper__inner"> <!----> <div class="tm-comments__empty"><span>Здесь пока нет ни одного комментария, вы&nbsp;можете&nbsp;стать первым!</span></div>  <DIV class="v-portal" style="display:none;"></DIV></div></div> <div class="tm-notice tm-comments__comment-notice tm-notice_positive"><!----> <div class="tm-notice__inner"><!----> <div class="tm-notice__content"><span>Только полноправные пользователи могут оставлять комментарии. <a rel="nofollow" href="/kek/v1/auth/habrahabr/?back=/ru/company/onlinepatent/blog/722630/comments/&hl=ru">Войдите</a>, пожалуйста.</span></div></div></div></div></div></div> <!----> <!----></div></div> <div class="tm-page__sidebar"><!----></div></div></div></div></main> <!----></div> <!----> <div class="tm-footer"><div class="tm-page-width"><div class="tm-footer__container"><div class="tm-footer__title"><a href="/ru/" class="tm-svg-icon__wrapper tm-footer__title-link router-link-active"><svg height="16" width="16" class="tm-svg-img tm-svg-icon"><title>Хабр</title> <use xlink:href="/img/habr-logo-ru.svg#logo"></use></svg></a></div> <div class="tm-footer__social"><a href="https://www.facebook.com/habrahabr.ru" rel="nofollow noopener noreferrer" target="_blank" class="tm-svg-icon__wrapper tm-social-icons__icon"><svg height="16" width="16" class="tm-svg-img tm-svg-icon"><title>Facebook</title> <use xlink:href="/img/social-icons-sprite.svg#social-logo-facebook"></use></svg></a><a href="https://twitter.com/habr_com" rel="nofollow noopener noreferrer" target="_blank" class="tm-svg-icon__wrapper tm-social-icons__icon"><svg height="16" width="16" class="tm-svg-img tm-svg-icon"><title>Twitter</title> <use xlink:href="/img/social-icons-sprite.svg#social-logo-twitter"></use></svg></a><a href="https://vk.com/habr" rel="nofollow noopener noreferrer" target="_blank" class="tm-svg-icon__wrapper tm-social-icons__icon"><svg height="16" width="16" class="tm-svg-img tm-svg-icon"><title>VK</title> <use xlink:href="/img/social-icons-sprite.svg#social-logo-vkontakte"></use></svg></a><a href="https://telegram.me/habr_com" rel="nofollow noopener noreferrer" target="_blank" class="tm-svg-icon__wrapper tm-social-icons__icon"><svg height="16" width="16" class="tm-svg-img tm-svg-icon"><title>Telegram</title> <use xlink:href="/img/social-icons-sprite.svg#social-logo-telegram"></use></svg></a><a href="https://www.youtube.com/channel/UCd_sTwKqVrweTt4oAKY5y4w" rel="nofollow noopener noreferrer" target="_blank" class="tm-svg-icon__wrapper tm-social-icons__icon"><svg height="16" width="16" class="tm-svg-img tm-svg-icon"><title>Youtube</title> <use xlink:href="/img/social-icons-sprite.svg#social-logo-youtube"></use></svg></a><a href="https://zen.yandex.ru/habr" rel="nofollow noopener noreferrer" target="_blank" class="tm-svg-icon__wrapper tm-social-icons__icon"><svg height="16" width="16" class="tm-svg-img tm-svg-icon"><title>Яндекс Дзен</title> <use xlink:href="/img/social-icons-sprite.svg#social-logo-zen"></use></svg></a></div> <DIV class="v-portal" style="display:none;"></DIV> <button class="tm-footer__link"><svg height="16" width="16" class="tm-svg-img tm-footer__icon"><title>Язык</title> <use xlink:href="/img/megazord-v28.617e16ca..svg#lang"></use></svg>
+        Настройка языка
+      </button> <a href="/ru/feedback/" class="tm-footer__link">
+        Техническая поддержка
+      </a> <a href="/berserk-mode-nope" class="tm-footer__link">
+        Вернуться на старую версию
+      </a> <div class="tm-footer-copyright"><span class="tm-copyright"><span class="tm-copyright__years">© 2006–2023, </span> <span class="tm-copyright__name"><a href="https://company.habr.com/" rel="noopener" target="_blank" class="tm-copyright__link">Habr</a></span></span></div></div></div></div> <!----> <!----></div> <div class="vue-portal-target"></div></div>
+<script>window.__INITIAL_STATE__={"adblock":{"hasAcceptableAdsFilter":false,"hasAdblock":false},"articlesList":{"articlesList":{"722630":{"id":"722630","timePublished":"2023-03-15T16:01:40+00:00","isCorporative":true,"lang":"ru","titleHtml":"Какие патенты в сфере финансовых технологий получили российские компании в 2022 году?","leadData":{"textHtml":"\u003Cp\u003EК понятию финансовых технологий (или просто финтеху) относят практически все разработки, которые могут использовать банки или платежные системы. Однако официально понятие финтеха подразумевает используемые финансовыми организациями именно инновационных технологий, таких как большие данные, блокчейн, искусственный интеллект и другие.&nbsp;\u003C\u002Fp\u003E\u003Cp\u003EРазвитие финансовых технологий —\u003Ca href=\"https:\u002F\u002Fcbr.ru\u002Ffintech\u002F\"\u003E\u003Cu\u003E одна из целей\u003C\u002Fu\u003E\u003C\u002Fa\u003E Центрального Банка России. Подробно план их развития на 2022-2024 года изложен в соответствующем \u003Ca href=\"https:\u002F\u002Fcbr.ru\u002FContent\u002FDocument\u002FFile\u002F131360\u002Foncfr_2022-2024.pdf\"\u003E\u003Cu\u003Eпроекте\u003C\u002Fu\u003E\u003C\u002Fa\u003E. Предлагаем посмотреть, что запатентовали российские компании в 2022 году.&nbsp;\u003C\u002Fp\u003E\u003Cp\u003E\u003C\u002Fp\u003E","imageUrl":"https:\u002F\u002Fhabrastorage.org\u002Fgetpro\u002Fhabr\u002Fupload_files\u002Fde6\u002Fc9e\u002F66d\u002Fde6c9e66df7448654d54aad0fd38c5f9.png","buttonTextHtml":"Читать далее","image":{"url":"https:\u002F\u002Fhabrastorage.org\u002Fgetpro\u002Fhabr\u002Fupload_files\u002Fde6\u002Fc9e\u002F66d\u002Fde6c9e66df7448654d54aad0fd38c5f9.png","fit":"cover","positionY":0,"positionX":0}},"editorVersion":"2.0","postType":"article","postLabels":[],"author":{"id":"3168027","alias":"Oksana_Nedvigina","fullname":null,"avatarUrl":null,"speciality":null,"scoreStats":{"score":3,"votesCount":15},"rating":1,"relatedData":null,"contacts":[],"authorContacts":[],"paymentDetails":{"paymentYandexMoney":null,"paymentPayPalMe":null,"paymentWebmoney":null}},"statistics":{"commentsCount":0,"favoritesCount":5,"readingCount":177,"score":2,"votesCount":6,"votesCountPlus":4,"votesCountMinus":2},"hubs":[{"id":"22970","alias":"onlinepatent","type":"corporative","title":"Блог компании Онлайн Патент","titleHtml":"Блог компании Онлайн Патент","isProfiled":false,"relatedData":null},{"id":"20742","alias":"read","type":"collective","title":"Читальный зал","titleHtml":"Читальный зал","isProfiled":false,"relatedData":null},{"id":"20746","alias":"patents","type":"collective","title":"Патентование","titleHtml":"Патентование","isProfiled":true,"relatedData":null},{"id":"21910","alias":"popular_science","type":"collective","title":"Научно-популярное","titleHtml":"Научно-популярное","isProfiled":false,"relatedData":null}],"flows":[{"id":"3","alias":"management","title":"Менеджмент","titleHtml":"Менеджмент"},{"id":"7","alias":"popsci","title":"Научпоп","titleHtml":"Научпоп"}],"relatedData":null,"textHtml":"\u003Cdiv xmlns=\"http:\u002F\u002Fwww.w3.org\u002F1999\u002Fxhtml\"\u003E\u003Cfigure class=\"full-width \"\u003E\u003Cimg src=\"https:\u002F\u002Fhabrastorage.org\u002Fr\u002Fw1560\u002Fgetpro\u002Fhabr\u002Fupload_files\u002Fde6\u002Fc9e\u002F66d\u002Fde6c9e66df7448654d54aad0fd38c5f9.png\" width=\"780\" height=\"440\" data-src=\"https:\u002F\u002Fhabrastorage.org\u002Fgetpro\u002Fhabr\u002Fupload_files\u002Fde6\u002Fc9e\u002F66d\u002Fde6c9e66df7448654d54aad0fd38c5f9.png\"\u002F\u003E\u003C\u002Ffigure\u003E\u003Cp\u003EК понятию финансовых технологий (или просто финтеху) относят практически все разработки, которые могут использовать банки или платежные системы. Однако официально понятие финтеха подразумевает используемые финансовыми организациями именно инновационных технологий, таких как большие данные, блокчейн, искусственный интеллект и другие. \u003C\u002Fp\u003E\u003Cp\u003EРазвитие финансовых технологий —\u003Ca href=\"https:\u002F\u002Fcbr.ru\u002Ffintech\u002F\"\u003E\u003Cu\u003E одна из целей\u003C\u002Fu\u003E\u003C\u002Fa\u003E Центрального Банка России. Подробно план их развития на 2022-2024 года изложен в соответствующем \u003Ca href=\"https:\u002F\u002Fcbr.ru\u002FContent\u002FDocument\u002FFile\u002F131360\u002Foncfr_2022-2024.pdf\"\u003E\u003Cu\u003Eпроекте\u003C\u002Fu\u003E\u003C\u002Fa\u003E. Предлагаем посмотреть, что запатентовали российские компании в 2022 году. \u003C\u002Fp\u003E\u003Ch3\u003EЧто происходит с финтехом в России в целом\u003C\u002Fh3\u003E\u003Cp\u003EВ 2019 году Россия \u003Ca href=\"https:\u002F\u002Fcbr.ru\u002FContent\u002FDocument\u002FFile\u002F131360\u002Foncfr_2022-2024.pdf\"\u003E\u003Cu\u003Eзаняла\u003C\u002Fu\u003E\u003C\u002Fa\u003E третье место в мире по уровню проникновения финансовых технологий и первое место по осведомленности о финтех-решениях в сфере платежей. \u003C\u002Fp\u003E\u003Cp\u003EЦентробанк России разработал несколько дорожных карт по развитию финансовых технологий. Инициатива распространяется на цифровой рубль, удалённую идентификацию, систему быстрых платежей, онлайн-сервис Маркетплейс, механизм регулятивная «песочница» (мониторинг финансовых сервисов и технологий на рынке), SupTech и RegTech (технологии из сферы правового регулирования финансового рынка). Некоторые направления развития отражены также в \u003Ca href=\"https:\u002F\u002Fcbr.ru\u002Fanalytics\u002Ffintekh\u002F\"\u003E\u003Cu\u003Eнормативных актах\u003C\u002Fu\u003E\u003C\u002Fa\u003E, включая децентрализацию финансов и внедрение открытых API. \u003C\u002Fp\u003E\u003Cp\u003EВ 2016 году по инициативе Банка России была создана Ассоциация ФинТех, объединившая как минимум ЦБ РФ, Газпромбанк, НСПК (национальная система платёжных карт), ВТБ, QIWI, Сбер, Тинькофф, АК Барс, Россельхозбанк, Альфа-Банк, Райффайзенбанк, ВСК, Мосбиржу. При этом из всех организаций активным патентованием разработок занимается только Сбер. \u003C\u002Fp\u003E\u003Cfigure class=\"full-width \"\u003E\u003Cimg src=\"https:\u002F\u002Fhabrastorage.org\u002Fr\u002Fw1560\u002Fgetpro\u002Fhabr\u002Fupload_files\u002F7fd\u002F5dc\u002F8ec\u002F7fd5dc8ecb246ef3ca4b6d88be68ea51.png\" alt=\"Тренды на 2023 год, выделенные Финтех Ассоциацией в одном из исследований\" title=\"Тренды на 2023 год, выделенные Финтех Ассоциацией в одном из исследований\" width=\"1523\" height=\"856\" data-src=\"https:\u002F\u002Fhabrastorage.org\u002Fgetpro\u002Fhabr\u002Fupload_files\u002F7fd\u002F5dc\u002F8ec\u002F7fd5dc8ecb246ef3ca4b6d88be68ea51.png\"\u002F\u003E\u003Cdiv\u003E\u003Cfigcaption\u003EТренды на 2023 год, выделенные Финтех Ассоциацией в \u003Ca href=\"https:\u002F\u002Fwww.fintechru.org\u002Fanalytics\u002Fpolnaya-versiya-issledovaniya-aft-3kh10-trendov-na-2023-god\u002F\"\u003E\u003Cu\u003Eодном из исследований\u003C\u002Fu\u003E\u003C\u002Fa\u003E\u003C\u002Ffigcaption\u003E\u003C\u002Fdiv\u003E\u003C\u002Ffigure\u003E\u003Cp\u003EАссоциация работает над заданными ЦБ целями. В 2021 году ими был учреждён первый в России блокчейн-оператор «Система распределенного реестра», запущен портал Открытых API со всей актуальной информацией. \u003C\u002Fp\u003E\u003Cfigure class=\"full-width \"\u003E\u003Cimg src=\"https:\u002F\u002Fhabrastorage.org\u002Fr\u002Fw1560\u002Fgetpro\u002Fhabr\u002Fupload_files\u002Ff1a\u002F092\u002Ffeb\u002Ff1a092feb190f96c4fc6fd206dac1534.png\" alt=\"\" title=\"\" width=\"590\" height=\"669\" data-src=\"https:\u002F\u002Fhabrastorage.org\u002Fgetpro\u002Fhabr\u002Fupload_files\u002Ff1a\u002F092\u002Ffeb\u002Ff1a092feb190f96c4fc6fd206dac1534.png\"\u002F\u003E\u003C\u002Ffigure\u003E\u003Cp\u003EКомпании из представленного выше рейтинга проекта «\u003Ca href=\"https:\u002F\u002Fatlanty1000.ru\u002Ffintech\"\u003E\u003Cu\u003EАтланты-1000\u003C\u002Fu\u003E\u003C\u002Fa\u003E» 2021 также неохотно занимаются регистрацией патентов. В ряде исследований отмечается, что несмотря на высокий уровень проникновения финтех-технологий в России это преимущественно «лёгкие» технологии — платежные системы, онлайн-сервисы, маркетплейсы. Решения по ним преимущественно заимствуются, а не изобретаются и регистрируются. На развитие же более «тяжёлых» технологий — искусственного интеллекта, больших данных, блокчейна — в РФ не хватало ресурсов. \u003C\u002Fp\u003E\u003Ch3\u003EКакие патенты получили компании?\u003C\u002Fh3\u003E\u003Cp\u003EЗначимой патентной активностью отличился Сбер — ему принадлежат почти все разработки из списка ниже. Именно Сберу принадлежит \u003Ca href=\"https:\u002F\u002Fsbertech.ru\u002F\"\u003E\u003Cu\u003Eпроект Сбертех\u003C\u002Fu\u003E\u003C\u002Fa\u003E, что в том числе делает его таким значимым в сфере финансовых технологий. Именно Сбертех обеспечивает банк большей частью технологий. \u003C\u002Fp\u003E\u003Ch4\u003EОбщение с банком по видеосвязи с защитой информации на мониторе \u003C\u002Fh4\u003E\u003Cp\u003EОдна из тенденций, отмеченная за Сбером в 2022 году — системы распознавания лиц клиентов. Одна из таких — система для определения, подвергалось ли лицо человека на видео синтетическим изменениям (патент №\u003Ca href=\"http:\u002F\u002Fnew.fips.ru\u002Fregisters-doc-view\u002Ffips_servlet?DB=RUPAT&amp;DocNumber=2768797&amp;TypeFile=html\"\u003E\u003Cu\u003E2768797\u003C\u002Fu\u003E\u003C\u002Fa\u003E). Для изучения лиц на видео, выстраивания моделей, сравнения и других процессов используется машинное обучение. Сбер в последний год активно разрабатывает систему общения с клиентами по видеосвязи, в том числе ищет способы выдачи кредитов через видео-консультацию. Пилот такого проекта был запущен в конце 2022 года. \u003C\u002Fp\u003E\u003Cfigure class=\"full-width \"\u003E\u003Cimg src=\"https:\u002F\u002Fhabrastorage.org\u002Fr\u002Fw780q1\u002Fgetpro\u002Fhabr\u002Fupload_files\u002F865\u002Fb8d\u002F7e1\u002F865b8d7e19d21368509201a0e24e9f59.jpeg\" alt=\"Схемы из патента №2768797 о распознавании синтетических изменений\" title=\"Схемы из патента №2768797 о распознавании синтетических изменений\" width=\"1600\" height=\"1148\" data-src=\"https:\u002F\u002Fhabrastorage.org\u002Fgetpro\u002Fhabr\u002Fupload_files\u002F865\u002Fb8d\u002F7e1\u002F865b8d7e19d21368509201a0e24e9f59.jpeg\" data-blurred=\"true\"\u002F\u003E\u003Cdiv\u003E\u003Cfigcaption\u003E\u003Cem\u003EСхемы из патента №\u003C\u002Fem\u003E\u003Ca href=\"http:\u002F\u002Fnew.fips.ru\u002Fregisters-doc-view\u002Ffips_servlet?DB=RUPAT&amp;DocNumber=2768797&amp;TypeFile=html\"\u003E\u003Cem\u003E\u003Cu\u003E2768797\u003C\u002Fu\u003E\u003C\u002Fem\u003E\u003C\u002Fa\u003E\u003Cem\u003E о распознавании синтетических изменений\u003C\u002Fem\u003E\u003C\u002Ffigcaption\u003E\u003C\u002Fdiv\u003E\u003C\u002Ffigure\u003E\u003Cp\u003EПри этом зарегистрирована минимум одна разработка, направленная на защиту данных, представляемых на экране мониторов (патент №\u003Ca href=\"http:\u002F\u002Fnew.fips.ru\u002Fregisters-doc-view\u002Ffips_servlet?DB=RUPAT&amp;DocNumber=2768533&amp;TypeFile=html\"\u003E\u003Cu\u003E2768533\u003C\u002Fu\u003E\u003C\u002Fa\u003E). Эта система защиты цифровой информации подразумевает использование цифровых меток (ЦМ) — блоков из графических элементов, размещенных геометрическим паттерном. То есть на экран монитора будет выводиться полупрозрачная подложка для защиты и кодирования информации, автоматически подстраиваясь под объём кодируемых данных. \u003C\u002Fp\u003E\u003Ch4\u003EРабота над безопасностью\u003C\u002Fh4\u003E\u003Cp\u003EДалеко не все разработки этой области используют именно инновационные технологии, но всё равно могут быть интересны. \u003C\u002Fp\u003E\u003Cp\u003EПовышается безопасность взноса наличных через банкоматы. Сбер запатентовал систему (патент №\u003Ca href=\"http:\u002F\u002Fnew.fips.ru\u002Fregisters-doc-view\u002Ffips_servlet?DB=RUPAT&amp;DocNumber=2767284&amp;TypeFile=html\"\u003E\u003Cu\u003E2767284\u003C\u002Fu\u003E\u003C\u002Fa\u003E), которая при поступлении запроса на отмену начисления денежных средств будет получать фото того, кто проводит операцию, сравнивать его с эталонным и принимать решение о выполнении команды. Другой патент (№\u003Ca href=\"http:\u002F\u002Fnew.fips.ru\u002Fregisters-doc-view\u002Ffips_servlet?DB=RUPAT&amp;DocNumber=2767285&amp;TypeFile=html\"\u003E\u003Cu\u003E2767285\u003C\u002Fu\u003E\u003C\u002Fa\u003E) направлен на устранение сбоев при операциях по зачислению наличных. \u003C\u002Fp\u003E\u003Cp\u003EВедётся работа над обнаружением и устранением мошенников. Так, патент №\u003Ca href=\"http:\u002F\u002Fnew.fips.ru\u002Fregisters-doc-view\u002Ffips_servlet?DB=RUPAT&amp;DocNumber=2769084&amp;TypeFile=html\"\u003E\u003Cu\u003E2769084\u003C\u002Fu\u003E\u003C\u002Fa\u003E описывает способ нахождения похожих мошеннических групп по графовым моделям. То есть система автоматически сравнивает проведенную транзакцию с известными мошенническими схемами и исходя из этого принимает решение. Ниже некоторые из представленных в этом патенте схем. \u003C\u002Fp\u003E\u003Cfigure class=\"full-width \"\u003E\u003Cimg src=\"https:\u002F\u002Fhabrastorage.org\u002Fr\u002Fw780q1\u002Fgetpro\u002Fhabr\u002Fupload_files\u002Fff3\u002F711\u002F3d8\u002Fff37113d8d2a86357af2fbb8f5be743f.jpeg\" alt=\"Схемы из патента №2769084 о распознавании мошеннических транзакций\" title=\"Схемы из патента №2769084 о распознавании мошеннических транзакций\" width=\"1600\" height=\"1131\" data-src=\"https:\u002F\u002Fhabrastorage.org\u002Fgetpro\u002Fhabr\u002Fupload_files\u002Fff3\u002F711\u002F3d8\u002Fff37113d8d2a86357af2fbb8f5be743f.jpeg\" data-blurred=\"true\"\u002F\u003E\u003Cdiv\u003E\u003Cfigcaption\u003E\u003Cem\u003EСхемы из патента №\u003C\u002Fem\u003E\u003Ca href=\"http:\u002F\u002Fnew.fips.ru\u002Fregisters-doc-view\u002Ffips_servlet?DB=RUPAT&amp;DocNumber=2769084&amp;TypeFile=html\"\u003E\u003Cem\u003E\u003Cu\u003E2769084\u003C\u002Fu\u003E\u003C\u002Fem\u003E\u003C\u002Fa\u003E\u003Cem\u003E о распознавании мошеннических транзакций\u003C\u002Fem\u003E\u003C\u002Ffigcaption\u003E\u003C\u002Fdiv\u003E\u003C\u002Ffigure\u003E\u003Cp\u003EВедётся работа и над повышением безопасности работы мобильных устройств. Патент №\u003Ca href=\"http:\u002F\u002Fnew.fips.ru\u002Fregisters-doc-view\u002Ffips_servlet?DB=RUPAT&amp;DocNumber=2779521&amp;TypeFile=html\"\u003E\u003Cu\u003E2779521\u003C\u002Fu\u003E\u003C\u002Fa\u003E описывает систему для идентификации устройства при установке приложения. Цель патента также в выявлении мошеннических транзакций. \u003C\u002Fp\u003E\u003Cp\u003EСоздал свою разработку в сфере идентификации и Тинькофф — ему принадлежит патент №\u003Ca href=\"https:\u002F\u002Fnew.fips.ru\u002Fregisters-doc-view\u002Ffips_servlet?DB=RUPAT&amp;DocNumber=2779249&amp;TypeFile=html\"\u003E\u003Cu\u003E2779249\u003C\u002Fu\u003E\u003C\u002Fa\u003E. Это разработка для определения принадлежности банковской карты пользователю, использующая данные о его местоположении и географические координаты.\u003C\u002Fp\u003E\u003Ch4\u003EВнедрение блокчейна для проведения операций\u003C\u002Fh4\u003E\u003Cp\u003EБлокчейн называют частным случаем технологий распределенного реестра, которые входят список ЦБ о наиболее важных технологиях. Обе технологии позволяют хранить информацию о транзакциях новым, более защищённым и менее управляемым способом. \u003C\u002Fp\u003E\u003Cp\u003EСбер зарегистрировал патент на использование технологии распределённого реестра при операциях между юридическими лицами (патент №\u003Ca href=\"http:\u002F\u002Fnew.fips.ru\u002Fregisters-doc-view\u002Ffips_servlet?DB=RUPAT&amp;DocNumber=2768561&amp;TypeFile=html\"\u003E\u003Cu\u003E2768561\u003C\u002Fu\u003E\u003C\u002Fa\u003E). При проведении сделки будут генерироваться цифровые токены, соответствующие обязательствам каждой из сторон сделки. Каждый токен при этом содержит уникальный ID и связан с публичным ключом его владельца. Некоторые схемы к этому патенту представлены ниже. \u003C\u002Fp\u003E\u003Cfigure class=\"full-width \"\u003E\u003Cimg src=\"https:\u002F\u002Fhabrastorage.org\u002Fr\u002Fw780q1\u002Fgetpro\u002Fhabr\u002Fupload_files\u002Ff84\u002Fa45\u002Fe79\u002Ff84a45e799b7e0ccf743bf13e883eec9.jpeg\" alt=\"Схемы к патенту №2768561 об использовании технологии распределённого реестра\" title=\"Схемы к патенту №2768561 об использовании технологии распределённого реестра\" width=\"1600\" height=\"1062\" data-src=\"https:\u002F\u002Fhabrastorage.org\u002Fgetpro\u002Fhabr\u002Fupload_files\u002Ff84\u002Fa45\u002Fe79\u002Ff84a45e799b7e0ccf743bf13e883eec9.jpeg\" data-blurred=\"true\"\u002F\u003E\u003Cdiv\u003E\u003Cfigcaption\u003E\u003Cem\u003EСхемы к патенту №\u003C\u002Fem\u003E\u003Ca href=\"http:\u002F\u002Fnew.fips.ru\u002Fregisters-doc-view\u002Ffips_servlet?DB=RUPAT&amp;DocNumber=2768561&amp;TypeFile=html\"\u003E\u003Cem\u003E\u003Cu\u003E2768561\u003C\u002Fu\u003E\u003C\u002Fem\u003E\u003C\u002Fa\u003E\u003Cem\u003E об использовании технологии распределённого реестра\u003C\u002Fem\u003E\u003C\u002Ffigcaption\u003E\u003C\u002Fdiv\u003E\u003C\u002Ffigure\u003E\u003Ch3\u003EИтоги\u003C\u002Fh3\u003E\u003Cp\u003EНесмотря на то, что сам по себе рынок финансовых технологий в России достаточно сильно развит, новые разработки в этой сфере патентуются лишь немногими участниками рынка. В интервью 2020 года с директором по технологиям больших данных «Билайна» и заместителем президента-председателя правления банка ВТБ \u003Ca href=\"https:\u002F\u002Fhabr.com\u002Fru\u002Fcompany\u002Fvtb\u002Fblog\u002F513618\u002F\"\u003E\u003Cu\u003Eотмечалось\u003C\u002Fu\u003E\u003C\u002Fa\u003E, что крупные корпорации работают со множеством стартапов. Последние при этом затрагивают самые разные области: от бесконтактных платежей до использования искусственного интеллекта. Однако как показал опыт 2022 года, патентованием финтех-разработок сейчас занимается преимущественно компания с развитой IT-инфраструктурой и большими бюджетами — Сбер. \u003C\u002Fp\u003E\u003Cdetails class=\"spoiler\"\u003E\u003Csummary\u003EО сервисе Онлайн Патент\u003C\u002Fsummary\u003E\u003Cdiv class=\"spoiler__content\"\u003E\u003Cp\u003EОнлайн Патент – цифровая система №1 в рейтинге Роспатента. С 2013 года мы создаем уникальные LegalTech-решения для защиты и управления интеллектуальной собственностью. \u003Ca href=\"https:\u002F\u002Fmy.onlinepatent.ru\u002Fclient\u002Fclaims\u002Flist\u002F?utm_source=habr&amp;utm_medium=organic&amp;utm_campaign=habr_organic_article73\"\u003EЗарегистрируйтесь в сервисе Онлайн-Патент\u003C\u002Fa\u003E и получите доступ к следующим услугам:\u003C\u002Fp\u003E\u003Cul\u003E\u003Cli\u003E\u003Cp\u003EОнлайн-регистрация программ, патентов на изобретение, товарных знаков, промышленного дизайна;\u003C\u002Fp\u003E\u003C\u002Fli\u003E\u003Cli\u003E\u003Cp\u003EПодача заявки на внесение в реестр отечественного ПО;\u003C\u002Fp\u003E\u003C\u002Fli\u003E\u003Cli\u003E\u003Cp\u003EОпции ускоренного оформления услуг;\u003C\u002Fp\u003E\u003C\u002Fli\u003E\u003Cli\u003E\u003Cp\u003EБесплатный поиск по базам патентов, программ, товарных знаков;\u003C\u002Fp\u003E\u003C\u002Fli\u003E\u003Cli\u003E\u003Cp\u003EМониторинги новых заявок по критериям;\u003C\u002Fp\u003E\u003C\u002Fli\u003E\u003Cli\u003E\u003Cp\u003EОнлайн-поддержку специалистов.\u003C\u002Fp\u003E\u003C\u002Fli\u003E\u003C\u002Ful\u003E\u003Cp\u003EБольше статей, аналитики от экспертов и полезной информации о интеллектуальной собственности в России и мире ищите в \u003Ca href=\"https:\u002F\u002Ft.me\u002F+DsqzUsFtJrA1OGY6\"\u003Eнашем Телеграм-канале\u003C\u002Fa\u003E.\u003C\u002Fp\u003E\u003Cp\u003EПолучите скидку в 2000 рублей на первый заказ. \u003Ca href=\"https:\u002F\u002Ft.me\u002Fonlinepatent\u002F121\"\u003EПодробнее в закрепленном посте.\u003C\u002Fa\u003E\u003C\u002Fp\u003E\u003C\u002Fdiv\u003E\u003C\u002Fdetails\u003E\u003Cp\u003E\u003C\u002Fp\u003E\u003C\u002Fdiv\u003E","tags":[{"titleHtml":"патент"},{"titleHtml":"финтех"},{"titleHtml":"проект"},{"titleHtml":"сбер"},{"titleHtml":"изобретение"}],"metadata":{"stylesUrls":[],"scriptUrls":[],"shareImageUrl":"https:\u002F\u002Fhabrastorage.org\u002Fgetpro\u002Fhabr\u002Fupload_files\u002Fde6\u002Fc9e\u002F66d\u002Fde6c9e66df7448654d54aad0fd38c5f9.png","shareImageWidth":1200,"shareImageHeight":630,"vkShareImageUrl":"https:\u002F\u002Fhabrastorage.org\u002Fgetpro\u002Fhabr\u002Fupload_files\u002Fde6\u002Fc9e\u002F66d\u002Fde6c9e66df7448654d54aad0fd38c5f9.png","schemaJsonLd":"{\"@context\":\"http:\\\u002F\\\u002Fschema.org\",\"@type\":\"Article\",\"mainEntityOfPage\":{\"@type\":\"WebPage\",\"@id\":\"https:\\\u002F\\\u002Fhabr.com\\\u002Fru\\\u002Fcompany\\\u002Fonlinepatent\\\u002Fblog\\\u002F722630\\\u002F\"},\"headline\":\"Какие патенты в сфере финансовых технологий получили российские компании в 2022 году?\",\"datePublished\":\"2023-03-15T19:01:40+03:00\",\"dateModified\":\"2023-03-15T19:01:40+03:00\",\"author\":{\"@type\":\"Person\",\"name\":\"Oksana_Nedvigina\"},\"publisher\":{\"@type\":\"Organization\",\"name\":\"Habr\",\"logo\":{\"@type\":\"ImageObject\",\"url\":\"https:\\\u002F\\\u002Fhabrastorage.org\\\u002Fwebt\\\u002Fa_\\\u002Flk\\\u002F9m\\\u002Fa_lk9mjkccjox-zccjrpfolmkmq.png\"}},\"description\":\"К понятию финансовых технологий (или просто финтеху) относят практически все разработки, которые могут использовать банки или платежные системы. Однако официальн...\",\"url\":\"https:\\\u002F\\\u002Fhabr.com\\\u002Fru\\\u002Fcompany\\\u002Fonlinepatent\\\u002Fblog\\\u002F722630\\\u002F#post-content-body\",\"about\":[\"c_onlinepatent\",\"h_read\",\"h_patents\",\"h_popular_science\",\"f_management\",\"f_popsci\"],\"image\":[\"https:\\\u002F\\\u002Fhabr.com\\\u002Fshare\\\u002Fpublication\\\u002F722630\\\u002F10a9ef123f25522680504bbedbd8da47\\\u002F\",\"https:\\\u002F\\\u002Fhabrastorage.org\\\u002Fgetpro\\\u002Fhabr\\\u002Fupload_files\\\u002Fde6\\\u002Fc9e\\\u002F66d\\\u002Fde6c9e66df7448654d54aad0fd38c5f9.png\",\"https:\\\u002F\\\u002Fhabrastorage.org\\\u002Fgetpro\\\u002Fhabr\\\u002Fupload_files\\\u002F7fd\\\u002F5dc\\\u002F8ec\\\u002F7fd5dc8ecb246ef3ca4b6d88be68ea51.png\",\"https:\\\u002F\\\u002Fhabrastorage.org\\\u002Fgetpro\\\u002Fhabr\\\u002Fupload_files\\\u002Ff1a\\\u002F092\\\u002Ffeb\\\u002Ff1a092feb190f96c4fc6fd206dac1534.png\",\"https:\\\u002F\\\u002Fhabrastorage.org\\\u002Fgetpro\\\u002Fhabr\\\u002Fupload_files\\\u002F865\\\u002Fb8d\\\u002F7e1\\\u002F865b8d7e19d21368509201a0e24e9f59.jpeg\",\"https:\\\u002F\\\u002Fhabrastorage.org\\\u002Fgetpro\\\u002Fhabr\\\u002Fupload_files\\\u002Fff3\\\u002F711\\\u002F3d8\\\u002Fff37113d8d2a86357af2fbb8f5be743f.jpeg\",\"https:\\\u002F\\\u002Fhabrastorage.org\\\u002Fgetpro\\\u002Fhabr\\\u002Fupload_files\\\u002Ff84\\\u002Fa45\\\u002Fe79\\\u002Ff84a45e799b7e0ccf743bf13e883eec9.jpeg\"]}","metaDescription":"К понятию финансовых технологий (или просто финтеху) относят практически все разработки, которые могут использовать банки или платежные системы. Однако официально понятие финтеха подразумевает...","mainImageUrl":null,"amp":false,"customTrackerLinks":["https:\u002F\u002Fvk.com\u002Frtrg?p=VK-RTRG-1669144-8I6Rb"]},"polls":[{"id":"40240","timeElapsed":null,"answersType":"radio","votesCount":4,"passCount":1,"textHtml":"Патентовали ли вы свои разработки в 2022 году?","relatedData":null,"variants":[{"id":"187028","textHtml":"Да","votesCount":1,"percent":25,"selected":false},{"id":"187030","textHtml":"Нет","votesCount":3,"percent":75,"selected":false}]}],"commentsEnabled":true,"rulesRemindEnabled":false,"votesEnabled":true,"status":"published","plannedPublishTime":null,"checked":null,"hasPinnedComments":false,"format":"review","banner":{"url":"https:\u002F\u002Fmy.onlinepatent.ru\u002Flogin\u002Fregistration\u002F?utm_source=habr&utm_medium=organic&utm_campaign=habr_organic_article_banner","desktopImageUrl":"\u002F\u002Fhabrastorage.org\u002Fgetpro\u002Fhabr\u002Fcompany\u002Fpost_desktop\u002F5a5\u002F23f\u002F069\u002F5a523f0690db172e81f2a0d65bcefbf4.png","mobileImageUrl":"\u002F\u002Fhabrastorage.org\u002Fgetpro\u002Fhabr\u002Fcompany\u002Fpost_mobile\u002F577\u002F54c\u002F51c\u002F57754c51c535e186db23808f91579385.png"},"readingTime":5,"complexity":"low","isEditorial":false}},"articlesIds":{},"isLoading":false,"pagesCount":{},"route":{},"reasonsList":null,"view":"list","lastVisitedRoute":{},"ssrCommentsArticleIds":[],"karma":{"userReasonsList":null}},"authorContribution":{"authors":{}},"betaTest":{"currentAnnouncement":null,"announcements":{},"announcementCards":null,"announcementComments":{},"announcementCommentThreads":{},"announcementCommentingStatuses":{},"archivedList":[]},"authorStatistics":{"articleRefs":{},"articleIds":{},"pagesCount":{},"route":{},"viewsCount":[],"maxStatsCount":{}},"career":{"seoLandings":[],"hubs":""},"comments":{"articleComments":{"722630":{"refs":{},"root":[]}},"articlePinnedComments":{},"searchCommentsResults":null,"pagesCount":null,"commentAccess":{"isCanComment":false,"cantCommentReasonKey":"AUTH_REQUIRED","cantCommentReason":"Authorization required","data":null},"scrollParents":{},"pageArticleComments":{"lastViewedComment":0,"postId":null,"lastCommentTimestamp":"","moderated":[],"moderatedIds":[],"commentRoute":""}},"companies":{"companyRefs":{},"companyIds":{},"companyTopIds":{},"pagesCount":{},"companyProfiles":{},"companiesCategories":[],"companiesCategoriesTotalCount":0,"companiesWidgets":{},"companiesWorkers":{},"companiesFans":{},"route":{},"isLoading":false,"companyWorkersLoading":false,"companyFansLoading":false,"vacancies":{},"companiesGalleries":{},"companiesBanners":{},"companiesLandingVacancies":{},"companiesTechnologies":{},"workplaceInfo":null},"companyAdmin":{"companyInfo":null,"companyInfoLoading":false,"faqArticles":null,"brandingPreviewImageUrl":null,"jivoStatus":0,"adminNotifications":null},"companiesContribution":{"hubs":{},"flows":{},"companyRefs":{}},"companyHubsContribution":{"contributionRefs":{"hubRefs":{},"hubIds":{}}},"conversation":{"messages":[],"respondent":null,"isLoadMore":false},"conversations":{"conversations":[],"unreadCount":0,"pagesCount":0},"desktopState":{"desktopFl":null,"desktopHl":null,"isChecked":false,"isLoginDemanded":false},"docs":{"menu":{},"articles":{},"mainMenu":[],"loading":{"main":false,"dropdown":false,"article":false}},"feature":{"isProbablyVisible":true},"flows":{"updates":{"countNewPostsBySubscription":null,"countNewPostsAll":67,"countNewNewsAll":54},"flows":[{"alias":"develop","id":"1","route":{"name":"FLOW_PAGE","params":{"flowName":"develop"}}},{"alias":"admin","id":"6","route":{"name":"FLOW_PAGE","params":{"flowName":"admin"}}},{"alias":"design","id":"2","route":{"name":"FLOW_PAGE","params":{"flowName":"design"}}},{"alias":"management","id":"3","route":{"name":"FLOW_PAGE","params":{"flowName":"management"}}},{"alias":"marketing","id":"4","route":{"name":"FLOW_PAGE","params":{"flowName":"marketing"}}},{"alias":"popsci","id":"7","route":{"name":"FLOW_PAGE","params":{"flowName":"popsci"}}}]},"global":{"isPwa":false,"device":"mobile","isHabrCom":true},"hubs":{"hubRefs":{},"hubIds":{},"pagesCount":{},"isLoading":false,"route":{}},"hubsBlock":{"hubRefs":{},"hubIds":{}},"i18n":{"fl":"ru","hl":"ru"},"info":{"infoPage":{},"isLoading":true},"location":{"urlStruct":{"protocol":null,"slashes":null,"auth":null,"host":null,"port":null,"hostname":null,"hash":null,"search":null,"query":{},"pathname":null,"path":null,"href":""}},"me":{"user":null,"uuid":null,"ppgDemanded":false,"karmaResetInfo":{"canReincarnate":null,"wasReincarnated":null,"currentScore":null},"notes":null},"modal":{"modals":[]},"mostReadingList":{"mostReadingListIds":[],"mostReadingListRefs":null,"promoPost":null},"ppa":{"articles":{},"card":null,"transactions":null,"totalTransactions":null,"isAccessible":null},"projectsBlocks":{"activeBlocks":{}},"promoData":{"isLoading":false,"hasLoaded":false,"featurer":null,"megaposts":null,"promoLinks":null,"promoPosts":null},"pullRefresh":{"shouldRefresh":false},"sandbox":{"articleIds":[],"articleRefs":{},"pagesCount":null,"route":{},"lastVisitedRoute":{},"isLoading":false},"search":{"searchQueryError":null},"settingsOther":{"inputs":{"uiLang":{"errors":[],"ref":null,"value":""},"articlesLangEnglish":{"errors":[],"ref":null,"value":false},"articlesLangRussian":{"errors":[],"ref":null,"value":false},"agreement":{"errors":[],"ref":null,"value":false},"email":{"errors":[],"ref":null,"value":true},"digest":{"errors":[],"ref":null,"value":true}}},"similarList":{"similarListIds":[],"similarListRefs":null},"ssr":{"error":null,"isDataLoaded":false,"isDataLoading":false,"isHydrationFailed":false,"isServer":false},"stories":{"stories":[]},"technotext":{"years":[],"technotextDocForNominees":null,"technotextDocForWinners":null,"technotextInfo":{},"technotextInfoLoading":false,"technotextWinners":{},"technotextWinnersLoading":false},"userHubsContribution":{"contributionRefs":{"hubRefs":{},"hubIds":{}}},"userInvites":{"availableInvites":0,"usedInvitesIds":[],"usedInvitesRefs":{},"usedInvitesPagesCount":0,"unusedInvitesIds":[],"unusedInvitesRefs":{},"unusedInvitesPagesCount":0},"userVotes":{"karmaVotesList":[],"karmaVotesPagesCount":null,"karmaVotesListLoading":false,"commentsVotesList":[],"commentsVotesPagesCount":null,"commentsVotesListLoading":false,"postsVotesList":[],"postsVotesPagesCount":null,"postsVotesListLoading":false,"userVotesList":[],"userVotesPagesCount":null,"userVotesListLoading":false},"users":{"authorRefs":{},"authorIds":{},"pagesCount":{},"authorProfiles":{},"userHubs":{},"userInvitations":{},"authorFollowers":{},"authorFollowed":{},"userSpecialization":{},"karmaStats":[],"statistics":null,"isLoading":false,"authorFollowersLoading":false,"authorFollowedLoading":false,"userHubsLoading":false,"userInvitationsLoading":false,"route":{}},"viewport":{"prevScrollY":{},"scrollY":0,"width":0},"tracker":{"items":{},"pagesCache":{},"markedViewedSilently":{},"markedRead":{},"unreadCounters":{"applications":null,"system":null,"mentions":null,"subscribers":null,"posts_and_comments":null},"unviewedCounters":{"applications":null,"system":null,"mentions":null,"subscribers":null,"posts_and_comments":null}}};(function(){var s;(s=document.currentScript||document.scripts[document.scripts.length-1]).parentNode.removeChild(s);}());</script>
+<script src="https://assets.habr.com/habr-web/js/chunk-vendors.76685433.js" defer></script><script src="https://assets.habr.com/habr-web/js/page-article-comments.dcfe697f.js" defer></script><script src="https://assets.habr.com/habr-web/js/7298.c8f1d73c.js" defer></script><script src="https://assets.habr.com/habr-web/js/app.067cb56a.js" defer></script>
+
+
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-726094-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+    </script>
+  
+  <script type="text/javascript" >
+    (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+    m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+    (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+    ym(24049213, "init", {
+      defer:true,
+      trackLinks:true,
+      accurateTrackBounce:true,
+      webvisor:false,
+    });
+  </script>
+  <noscript>
+    <div>
+      <img src="https://mc.yandex.ru/watch/24049213" style="position:absolute; left:-9999px;" alt="" />
+    </div>
+  </noscript>
+  
+    <script type="text/javascript">
+      window.addEventListener('load', function () {
+        setTimeout(() => {
+          const img = new Image();
+          img.src = 'https://vk.com/rtrg?p=VK-RTRG-421343-57vKE';
+        }, 0);
+      });
+    </script>
+  
+<script src="/js/ads.js" onload="window['zhY4i4nJ9K'] = true"></script>
+</body>
+</html>
+

@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="ru" data-vue-meta="%7B%22lang%22:%7B%22ssr%22:%22ru%22%7D%7D">
+<head >
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,viewport-fit=cover,maximum-scale=1,user-scalable=0">
+  <meta name="referrer" content="unsafe-url">
+  <title>6 простых принципов написания приложения на Vue, которое легко поддерживать (часть 2) / Комментарии / Хабр</title>
+  <style>
+    /* cyrillic-ext */
+    @font-face {
+      font-family: 'Fira Sans';
+      font-style: normal;
+      font-weight: 500;
+      font-display: swap;
+      src: url(https://fonts.gstatic.com/s/firasans/v11/va9B4kDNxMZdWfMOD5VnZKveSxf6TF0.woff2) format('woff2');
+      unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+    }
+
+    /* cyrillic */
+    @font-face {
+      font-family: 'Fira Sans';
+      font-style: normal;
+      font-weight: 500;
+      font-display: swap;
+      src: url(https://fonts.gstatic.com/s/firasans/v11/va9B4kDNxMZdWfMOD5VnZKveQhf6TF0.woff2) format('woff2');
+      unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+    }
+
+    /* latin-ext */
+    @font-face {
+      font-family: 'Fira Sans';
+      font-style: normal;
+      font-weight: 500;
+      font-display: swap;
+      src: url(https://fonts.gstatic.com/s/firasans/v11/va9B4kDNxMZdWfMOD5VnZKveSBf6TF0.woff2) format('woff2');
+      unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+    }
+
+    /* latin */
+    @font-face {
+      font-family: 'Fira Sans';
+      font-style: normal;
+      font-weight: 500;
+      font-display: swap;
+      src: url(https://fonts.gstatic.com/s/firasans/v11/va9B4kDNxMZdWfMOD5VnZKveRhf6.woff2) format('woff2');
+      unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+    }
+
+    /* non-breaking hyphen */
+    @font-face {
+      font-family: 'Fira Sans';
+      font-style: normal;
+      font-weight: 500;
+      font-display: swap;
+      src: url(https://fonts.gstatic.com/l/font?kit=KFOlCnqEu92Fr1MmEU9vBh0_IsHAlmrO6g&skey=ee881451c540fdec&v=v29) format('woff2');
+      unicode-range: U+02011;
+    }
+  </style>
+  <link rel="preload" href="https://assets.habr.com/habr-web/css/chunk-vendors.b6238726.css" as="style"><link rel="preload" href="https://assets.habr.com/habr-web/js/chunk-vendors.76685433.js" as="script"><link rel="preload" href="https://assets.habr.com/habr-web/css/app.59c6701f.css" as="style"><link rel="preload" href="https://assets.habr.com/habr-web/js/app.067cb56a.js" as="script"><link rel="preload" href="https://assets.habr.com/habr-web/css/page-article-comments.cc6a301a.css" as="style"><link rel="preload" href="https://assets.habr.com/habr-web/js/page-article-comments.dcfe697f.js" as="script"><link rel="preload" href="https://assets.habr.com/habr-web/js/7298.c8f1d73c.js" as="script">
+  <link rel="stylesheet" href="https://assets.habr.com/habr-web/css/chunk-vendors.b6238726.css"><link rel="stylesheet" href="https://assets.habr.com/habr-web/css/app.59c6701f.css"><link rel="stylesheet" href="https://assets.habr.com/habr-web/css/page-article-comments.cc6a301a.css">
+  <script>window.i18nFetch = new Promise((res, rej) => {
+          const xhr = new XMLHttpRequest();
+          xhr.open('GET', '/js/i18n/ru-compiled.bb54036e20d5f2f436c26e6c1769b6b8.json');
+          xhr.responseType = 'json';
+          xhr.onload = function(e) {
+            if (this.status === 200) {
+              res({ru: xhr.response});
+            } else {
+              rej(e);
+            }
+          };
+          xhr.send();
+        });</script>
+  
+  
+  <script src="//www.googletagservices.com/tag/js/gpt.js" async></script>
+  <style>.grecaptcha-badge{visibility: hidden;}</style>
+  <meta name="habr-version" content="2.116.0">
+  
+  <meta data-vue-meta="ssr" itemprop="image" content="/img/habr_ru.png" data-vmid="image:itemprop"><meta data-vue-meta="ssr" property="og:image" content="/img/habr_ru.png" data-vmid="og:image"><meta data-vue-meta="ssr" property="og:image:width" content="1200" data-vmid="og:image:width"><meta data-vue-meta="ssr" property="og:image:height" content="630" data-vmid="og:image:height"><meta data-vue-meta="ssr" property="aiturec:image" content="/img/habr_ru.png" data-vmid="aiturec:image"><meta data-vue-meta="ssr" name="twitter:image" content="/img/habr_ru.png" data-vmid="twitter:image"><meta data-vue-meta="ssr" property="vk:image" content="/img/habr_ru.png?format=vk" data-vmid="vk:image"><meta data-vue-meta="ssr" property="fb:app_id" content="444736788986613"><meta data-vue-meta="ssr" property="fb:pages" content="472597926099084"><meta data-vue-meta="ssr" name="twitter:card" content="summary_large_image"><meta data-vue-meta="ssr" name="twitter:site" content="@habr_com"><meta data-vue-meta="ssr" property="og:locale" content="ru_RU" data-vmid="og:locale"><meta data-vue-meta="ssr" property="og:type" content="website" data-vmid="og:type"><meta data-vue-meta="ssr" property="og:site_name" content="Хабр" data-vmid="og:site_name"><meta data-vue-meta="ssr" property="og:title" content="Хабр" data-vmid="og:title"><meta data-vue-meta="ssr" property="og:url" content="https://habr.com/ru/company/agima/blog/722568/comments/" data-vmid="og:url">
+  <link data-vue-meta="ssr" rel="image_src" href="/img/habr_ru.png" data-vmid="image:href"><link data-vue-meta="ssr" href="https://habr.com/ru/rss/post/722568/?fl=ru" type="application/rss+xml" title="" rel="alternate" name="rss"><link data-vue-meta="ssr" href="https://habr.com/ru/company/agima/blog/722568/" rel="canonical" data-vmid="canonical">
+  <meta name="apple-mobile-web-app-status-bar-style" content="#303b44">
+  <meta name="msapplication-TileColor" content="#629FBC">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="mobile-web-app-capable" content="yes">
+  <link
+    rel="shortcut icon"
+    type="image/png"
+    sizes="16x16"
+    href="https://assets.habr.com/habr-web/img/favicons/favicon-16.png"
+  >
+  <link
+    rel="shortcut icon"
+    type="image/png"
+    sizes="32x32"
+    href="https://assets.habr.com/habr-web/img/favicons/favicon-32.png"
+  >
+  <link
+    rel="apple-touch-icon"
+    type="image/png"
+    sizes="76x76"
+    href="https://assets.habr.com/habr-web/img/favicons/apple-touch-icon-76.png"
+  >
+  <link
+    rel="apple-touch-icon"
+    type="image/png"
+    sizes="120x120"
+    href="https://assets.habr.com/habr-web/img/favicons/apple-touch-icon-120.png"
+  >
+  <link
+    rel="apple-touch-icon"
+    type="image/png"
+    sizes="152x152"
+    href="https://assets.habr.com/habr-web/img/favicons/apple-touch-icon-152.png"
+  >
+  <link
+    rel="apple-touch-icon"
+    type="image/png"
+    sizes="180x180"
+    href="https://assets.habr.com/habr-web/img/favicons/apple-touch-icon-180.png"
+  >
+  <link
+    rel="apple-touch-icon"
+    type="image/png"
+    sizes="256x256"
+    href="https://assets.habr.com/habr-web/img/favicons/apple-touch-icon-256.png"
+  >
+  <link
+    rel="apple-touch-startup-image"
+    media="screen and (device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)"
+    href="https://assets.habr.com/habr-web/img/splashes/splash_1136x640.png"
+  >
+  <link
+    rel="apple-touch-startup-image"
+    media="screen and (device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)"
+    href="https://assets.habr.com/habr-web/img/splashes/splash_2436x1125.png"
+  >
+  <link
+    rel="apple-touch-startup-image"
+    media="screen and (device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)"
+    href="https://assets.habr.com/habr-web/img/splashes/splash_1792x828.png"
+  >
+  <link
+    rel="apple-touch-startup-image"
+    media="screen and (device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)"
+    href="https://assets.habr.com/habr-web/img/splashes/splash_828x1792.png"
+  >
+  <link
+    rel="apple-touch-startup-image"
+    media="screen and (device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)"
+    href="https://assets.habr.com/habr-web/img/splashes/splash_1334x750.png"
+  >
+  <link
+    rel="apple-touch-startup-image"
+    media="screen and (device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)"
+    href="https://assets.habr.com/habr-web/img/splashes/splash_1242x2668.png"
+  >
+  <link
+    rel="apple-touch-startup-image"
+    media="screen and (device-width: 414px) and (device-height: 736px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)"
+    href="https://assets.habr.com/habr-web/img/splashes/splash_2208x1242.png"
+  >
+  <link
+    rel="apple-touch-startup-image"
+    media="screen and (device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)"
+    href="https://assets.habr.com/habr-web/img/splashes/splash_1125x2436.png"
+  >
+  <link
+    rel="apple-touch-startup-image"
+    media="screen and (device-width: 414px) and (device-height: 736px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)"
+    href="https://assets.habr.com/habr-web/img/splashes/splash_1242x2208.png"
+  >
+  <link
+    rel="apple-touch-startup-image"
+    media="screen and (device-width: 1024px) and (device-height: 1366px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)"
+    href="https://assets.habr.com/habr-web/img/splashes/splash_2732x2048.png"
+  >
+  <link
+    rel="apple-touch-startup-image"
+    media="screen and (device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)"
+    href="https://assets.habr.com/habr-web/img/splashes/splash_2688x1242.png"
+  >
+  <link
+    rel="apple-touch-startup-image"
+    media="screen and (device-width: 834px) and (device-height: 1112px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)"
+    href="https://assets.habr.com/habr-web/img/splashes/splash_2224x1668.png"
+  >
+  <link
+    rel="apple-touch-startup-image"
+    media="screen and (device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)"
+    href="https://assets.habr.com/habr-web/img/splashes/splash_750x1334.png"
+  >
+  <link
+    rel="apple-touch-startup-image"
+    media="screen and (device-width: 1024px) and (device-height: 1366px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)"
+    href="https://assets.habr.com/habr-web/img/splashes/splash_2048x2732.png"
+  >
+  <link
+    rel="apple-touch-startup-image"
+    media="screen and (device-width: 834px) and (device-height: 1194px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)"
+    href="https://assets.habr.com/habr-web/img/splashes/splash_2388x1668.png"
+  >
+  <link
+    rel="apple-touch-startup-image"
+    media="screen and (device-width: 834px) and (device-height: 1112px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)"
+    href="https://assets.habr.com/habr-web/img/splashes/splash_1668x2224.png"
+  >
+  <link
+    rel="apple-touch-startup-image"
+    media="screen and (device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)"
+    href="https://assets.habr.com/habr-web/img/splashes/splash_640x1136.png"
+  >
+  <link
+    rel="apple-touch-startup-image"
+    media="screen and (device-width: 834px) and (device-height: 1194px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)"
+    href="https://assets.habr.com/habr-web/img/splashes/splash_1668x2388.png"
+  >
+  <link
+    rel="apple-touch-startup-image"
+    media="screen and (device-width: 768px) and (device-height: 1024px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)"
+    href="https://assets.habr.com/habr-web/img/splashes/splash_2048x1536.png"
+  >
+  <link
+    rel="apple-touch-startup-image"
+    media="screen and (device-width: 768px) and (device-height: 1024px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)"
+    href="https://assets.habr.com/habr-web/img/splashes/splash_1536x2048.png"
+  >
+  <link
+    rel="mask-icon"
+    color="#77a2b6"
+    href="https://assets.habr.com/habr-web/img/favicons/apple-touch-icon-120.svg"
+  >
+  <link
+    crossorigin="use-credentials"
+    href="/manifest.webmanifest"
+    rel="manifest"
+  >
+  <script async src="https://unpkg.com/pwacompat" crossorigin="anonymous"></script>
+  <script>window.yaContextCb = window.yaContextCb || []</script>
+  <script src="https://yandex.ru/ads/system/context.js" async></script>
+</head>
+<body>
+
+
+<div id="app" data-server-rendered="true" data-async-called="true"><div class="tm-layout__wrapper"><!----> <div></div> <div class="tm-feature tm-feature"><!----></div> <header class="tm-header"><div class="tm-page-width"><div class="tm-header__container"><div class="tm-header__burger-nav"><button type="button" class="tm-header__button tm-header__button_burger"><svg height="16" width="16" class="tm-svg-img tm-header__icon tm-header__icon-burger"><title>Меню</title> <use xlink:href="/img/megazord-v28.617e16ca..svg#header-burger"></use></svg></button></div> <span class="tm-header__logo-wrap"><a href="/ru/" class="tm-header__logo tm-header__logo_ru"><svg height="16" width="16" class="tm-svg-img tm-header__icon"><title>Хабр</title> <use xlink:href="/img/habr-logo-ru.svg#logo"></use></svg></a> <span class="tm-header__beta-sign" style="display:none;">β</span></span> <!----> <div class="tm-header-user-menu tm-header_user-menu"><a href="/ru/search/" class="tm-header-user-menu__item tm-header-user-menu__search"><svg height="24" width="24" class="tm-svg-img tm-header-user-menu__icon tm-header-user-menu__icon_search"><title>Поиск</title> <use xlink:href="/img/megazord-v28.617e16ca..svg#search"></use></svg></a> <!----> <!----> <!----> <div class="tm-header-user-menu__item"><button data-test-id="menu-toggle-guest" class="tm-header-user-menu__toggle"><svg height="24" width="24" class="tm-svg-img tm-header-user-menu__icon tm-header-user-menu__icon_white"><title>Профиль</title> <use xlink:href="/img/megazord-v28.617e16ca..svg#header-user"></use></svg></button> <!----></div> <!----></div></div></div></header> <div class="tm-layout"><div class="tm-page-progress-bar"></div> <!----> <!----> <div class="tm-page-width"></div> <main class="tm-layout__container"><div hl="ru" companyName="agima" data-async-called="true" class="tm-page"><div class="tm-page-width"><!----> <div class="tm-page__wrapper"><div class="tm-page__main tm-page__main_has-sidebar"><div class="pull-down"><!----> <div class="pull-down__header" style="height:0px;"><div class="pull-down__content" style="bottom:10px;"><svg height="24" width="24" class="tm-svg-img pull-down__arrow"><title>Обновить</title> <use xlink:href="/img/megazord-v28.617e16ca..svg#pull-arrow"></use></svg></div></div> <article class="tm-article-comments__article-body"><div class="tm-article-comments__article-snippet"><div class="tm-article-snippet tm-article-snippet"><div class="tm-article-snippet__meta-container"><div class="tm-article-snippet__meta"><span class="tm-user-info tm-article-snippet__author"><a href="/ru/users/nkalacheva/" title="nkalacheva" class="tm-user-info__userpic"><div class="tm-entity-image"><img alt="" height="32" src="//habrastorage.org/r/w48/getpro/habr/avatars/a6c/fda/983/a6cfda9839b5ac4bfe5706c96bb16676.jpg" width="32" class="tm-entity-image__pic"></div></a> <span class="tm-user-info__user"><a href="/ru/users/nkalacheva/" class="tm-user-info__username">
+      nkalacheva
+      <!----></a> <span class="tm-article-datetime-published"><time datetime="2023-03-15T12:55:35.000Z" title="2023-03-15, 15:55">5 часов назад</time></span></span></span></div> <!----></div> <h1 class="tm-article-snippet__title tm-article-snippet__title_h1"><a href="/ru/company/agima/blog/722568/" data-article-link="" class="tm-article-snippet__title-link router-link-active"><span>6 простых принципов написания приложения на Vue, которое легко поддерживать (часть 2)</span></a></h1> <div class="tm-article-snippet__stats"><!----> <div class="tm-article-reading-time"><span class="tm-svg-icon__wrapper tm-article-reading-time__icon"><svg height="24" width="24" class="tm-svg-img tm-svg-icon"><title>Время на прочтение</title> <use xlink:href="/img/megazord-v28.617e16ca..svg#clock"></use></svg></span> <span class="tm-article-reading-time__label">
+    5 мин
+  </span></div> <span class="tm-icon-counter tm-data-icons__item"><svg height="24" width="24" class="tm-svg-img tm-icon-counter__icon"><title>Количество просмотров</title> <use xlink:href="/img/megazord-v28.617e16ca..svg#counter-views"></use></svg> <span class="tm-icon-counter__value">789</span></span></div> <div class="tm-article-snippet__hubs-container"><div class="tm-article-snippet__hubs"><span class="tm-article-snippet__hubs-item"><a href="/ru/company/agima/blog/" class="tm-article-snippet__hubs-item-link router-link-active"><span>Блог компании AGIMA</span> <!----></a></span><span class="tm-article-snippet__hubs-item"><a href="/ru/hub/javascript/" class="tm-article-snippet__hubs-item-link"><span>JavaScript</span> <span title="Профильный хаб" class="tm-article-snippet__profiled-hub">*</span></a></span><span class="tm-article-snippet__hubs-item"><a href="/ru/hub/mobile_dev/" class="tm-article-snippet__hubs-item-link"><span>Разработка мобильных приложений</span> <span title="Профильный хаб" class="tm-article-snippet__profiled-hub">*</span></a></span><span class="tm-article-snippet__hubs-item"><a href="/ru/hub/vuejs/" class="tm-article-snippet__hubs-item-link"><span>VueJS</span> <span title="Профильный хаб" class="tm-article-snippet__profiled-hub">*</span></a></span></div></div> <div class="tm-article-snippet__labels-container"><div class="tm-article-snippet__labels"><div class="tm-article-snippet__label tm-article-snippet__label_variant-review"><span>
+          Обзор
+        </span></div> </div></div> <!----> <!----></div> <div class="tm-data-icons"><!----> <div class="tm-votes-meter tm-data-icons__item"><svg height="24" width="24" class="tm-svg-img tm-votes-meter__icon tm-votes-meter__icon tm-votes-meter__icon_appearance-article"><title>Всего голосов 33: ↑33 и ↓0</title> <use xlink:href="/img/megazord-v28.617e16ca..svg#counter-rating"></use></svg> <span title="Всего голосов 33: ↑33 и ↓0" class="tm-votes-meter__value tm-votes-meter__value tm-votes-meter__value_positive tm-votes-meter__value_appearance-article tm-votes-meter__value_rating">+33</span></div> <!----> <button title="Добавить в закладки" type="button" class="bookmarks-button tm-data-icons__item"><span class="tm-svg-icon__wrapper bookmarks-button__icon"><svg height="24" width="24" class="tm-svg-img tm-svg-icon"><title>Добавить в закладки</title> <use xlink:href="/img/megazord-v28.617e16ca..svg#counter-favorite"></use></svg></span> <span title="Количество пользователей, добавивших публикацию в закладки" class="bookmarks-button__counter">
+    53
+  </span></button> <div title="Поделиться" class="tm-sharing tm-data-icons__item"><button type="button" class="tm-sharing__button"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" class="tm-sharing__icon"><path fill="currentColor" d="M13.8 13.8V18l7.2-6.6L13.8 5v3.9C5 8.9 3 18.6 3 18.6c2.5-4.4 6-4.8 10.8-4.8z"></path></svg></button> <DIV class="v-portal" style="display:none;"></DIV></div> <div title="Читать комментарии" class="tm-article-comments-counter-link tm-data-icons__item"><a href="/ru/company/agima/blog/722568/comments/" aria-current="page" class="tm-article-comments-counter-link__link"><svg height="24" width="24" class="tm-svg-img tm-article-comments-counter-link__icon"><title>Комментарии</title> <use xlink:href="/img/megazord-v28.617e16ca..svg#counter-comments"></use></svg> <span class="tm-article-comments-counter-link__value">
+      2
+    </span></a> <!----></div> <!----> <DIV class="v-portal" style="display:none;"></DIV></div></div></article> <!----> <div data-async-called="true" class="tm-article-comments-offloaded"><div class="tm-article-comments"><div class="tm-comments-wrapper"><div class="tm-comments-wrapper__wrapper"><header class="tm-comments-wrapper__header"><h2 class="tm-comments-wrapper__title">
+        Комментарии
+        <span class="tm-comments-wrapper__comments-count">
+          2
+        </span></h2> <div class="tm-comments-wrapper__header-aside"><!----> <button class="tm-rss-button tm-rss-button_comments-header"><span class="tm-svg-icon__wrapper tm-rss-button__icon"><svg height="16" width="16" class="tm-svg-img tm-svg-icon"><title>Скопировать ссылку на RSS</title> <use xlink:href="/img/megazord-v28.617e16ca..svg#rss"></use></svg></span></button> <!----></div></header> <div class="tm-comments-wrapper__inner"> <!----> <div data-comments-list="" class="tm-comments__tree"><section class="tm-comment-thread"><!----> <article class="tm-comment-thread__comment"><a name="comment_25329210" class="tm-comment-thread__target"></a> <button class="tm-comment-thread__breadcrumbs tm-comment-thread__indent_b_l-0"><div class="tm-comment-thread__circle"></div></button> <!----> <div data-comment-body="25329210" class="tm-comment-thread__indent_l-0"><div data-gallery-root="" class="tm-comment"><header data-comment-header tabindex="-1" class="tm-comment__header"><div class="tm-comment__header-inner"><span class="tm-user-info tm-comment__user-info"><a href="/ru/users/gmtd/" title="gmtd" class="tm-user-info__userpic"><div class="tm-entity-image"><svg height="24" width="24" class="tm-svg-img tm-image-placeholder tm-image-placeholder_blue"><!----> <use xlink:href="/img/megazord-v28.617e16ca..svg#placeholder-user"></use></svg></div></a> <span class="tm-user-info__user"><a href="/ru/users/gmtd/" class="tm-user-info__username">
+      gmtd
+      <!----></a> <a href="#comment_25329210" class="tm-comment-thread__comment-link"><time datetime="2023-03-15T13:27:05.000Z" title="2023-03-15, 16:27">4 часа назад</time> <!----></a></span></span></div> <div class="tm-comment__buttons"><!----> <!----></div></header> <div class="tm-comment__body-content tm-comment__body-content_v2"><div xmlns="http://www.w3.org/1999/xhtml"><p>135 просмотров и 27 "плюсиков"</p><p>Сразу видно - хорошая статья</p></div></div> <!----> <!----></div> <div class="tm-comment-footer"><div class="tm-votes-meter tm-comment-footer__votes-meter"><svg height="24" width="24" class="tm-svg-img tm-votes-meter__icon tm-votes-meter__icon tm-votes-meter__icon_appearance-comment"><title>Комментарий пока не оценивали</title> <use xlink:href="/img/megazord-v28.617e16ca..svg#counter-rating"></use></svg> <span title="Комментарий пока не оценивали" class="tm-votes-meter__value tm-votes-meter__value tm-votes-meter__value_appearance-comment tm-votes-meter__value_rating">0</span></div> <button type="button" class="tm-comment-thread__button">
+                  Ответить
+                </button> <button title="Добавить в закладки" type="button" class="bookmarks-button tm-comment-footer__button tm-comment-footer__button_with-icon"><span class="tm-svg-icon__wrapper bookmarks-button__icon"><svg height="24" width="24" class="tm-svg-img tm-svg-icon"><title>Добавить в закладки</title> <use xlink:href="/img/megazord-v28.617e16ca..svg#counter-favorite"></use></svg></span> <!----></button> <button data-comment-popup="25329210" class="tm-comment__button tm-comment__button_with-icon"><svg height="16" width="16" class="tm-svg-img tm-comment__icon tm-comment__icon_dots"><title>Ещё</title> <use xlink:href="/img/megazord-v28.617e16ca..svg#dots"></use></svg></button> <!----></div></div></article> <div class="tm-comment-thread__children" style="display:;"><section class="tm-comment-thread"><!----> <article class="tm-comment-thread__comment"><a name="comment_25329478" class="tm-comment-thread__target"></a> <button class="tm-comment-thread__breadcrumbs tm-comment-thread__indent_b_l-1"><div class="tm-comment-thread__circle"></div></button> <!----> <div data-comment-body="25329478" class="tm-comment-thread__indent_l-1"><div data-gallery-root="" class="tm-comment"><header data-comment-header tabindex="-1" class="tm-comment__header"><div class="tm-comment__header-inner"><span class="tm-user-info tm-comment__user-info"><a href="/ru/users/ht-pro/" title="ht-pro" class="tm-user-info__userpic"><div class="tm-entity-image"><img alt="" height="24" src="//habrastorage.org/r/w48/getpro/habr/avatars/ede/277/e7d/ede277e7d849d21366ebb73a242fcf64.jpg" width="24" class="tm-entity-image__pic"></div></a> <span class="tm-user-info__user"><a href="/ru/users/ht-pro/" class="tm-user-info__username">
+      ht-pro
+      <!----></a> <a href="#comment_25329478" class="tm-comment-thread__comment-link"><time datetime="2023-03-15T14:26:53.000Z" title="2023-03-15, 17:26">3 часа назад</time> <!----></a></span></span></div> <div class="tm-comment__buttons"><button type="button" class="tm-comment__button tm-comment__button_with-icon"><svg height="16" width="16" class="tm-svg-img tm-comment__icon"><title>Показать предыдущий комментарий</title> <use xlink:href="/img/megazord-v28.617e16ca..svg#small-arrow"></use></svg></button> <!----></div></header> <div class="tm-comment__body-content tm-comment__body-content_v2"><div xmlns="http://www.w3.org/1999/xhtml"><p>Или "плюсы" накручены 🤔</p></div></div> <!----> <!----></div> <div class="tm-comment-footer"><div class="tm-votes-meter tm-comment-footer__votes-meter"><svg height="24" width="24" class="tm-svg-img tm-votes-meter__icon tm-votes-meter__icon tm-votes-meter__icon_appearance-comment"><title>Комментарий пока не оценивали</title> <use xlink:href="/img/megazord-v28.617e16ca..svg#counter-rating"></use></svg> <span title="Комментарий пока не оценивали" class="tm-votes-meter__value tm-votes-meter__value tm-votes-meter__value_appearance-comment tm-votes-meter__value_rating">0</span></div> <button type="button" class="tm-comment-thread__button">
+                  Ответить
+                </button> <button title="Добавить в закладки" type="button" class="bookmarks-button tm-comment-footer__button tm-comment-footer__button_with-icon"><span class="tm-svg-icon__wrapper bookmarks-button__icon"><svg height="24" width="24" class="tm-svg-img tm-svg-icon"><title>Добавить в закладки</title> <use xlink:href="/img/megazord-v28.617e16ca..svg#counter-favorite"></use></svg></span> <!----></button> <button data-comment-popup="25329478" class="tm-comment__button tm-comment__button_with-icon"><svg height="16" width="16" class="tm-svg-img tm-comment__icon tm-comment__icon_dots"><title>Ещё</title> <use xlink:href="/img/megazord-v28.617e16ca..svg#dots"></use></svg></button> <!----></div></div></article> <!----> <!----></section></div> <!----></section></div>  <DIV class="v-portal" style="display:none;"></DIV></div></div> <div class="tm-notice tm-comments__comment-notice tm-notice_positive"><!----> <div class="tm-notice__inner"><!----> <div class="tm-notice__content"><span>Только полноправные пользователи могут оставлять комментарии. <a rel="nofollow" href="/kek/v1/auth/habrahabr/?back=/ru/company/agima/blog/722568/comments/&hl=ru">Войдите</a>, пожалуйста.</span></div></div></div></div></div></div> <!----> <!----></div></div> <div class="tm-page__sidebar"><!----></div></div></div></div></main> <!----></div> <!----> <div class="tm-footer"><div class="tm-page-width"><div class="tm-footer__container"><div class="tm-footer__title"><a href="/ru/" class="tm-svg-icon__wrapper tm-footer__title-link router-link-active"><svg height="16" width="16" class="tm-svg-img tm-svg-icon"><title>Хабр</title> <use xlink:href="/img/habr-logo-ru.svg#logo"></use></svg></a></div> <div class="tm-footer__social"><a href="https://www.facebook.com/habrahabr.ru" rel="nofollow noopener noreferrer" target="_blank" class="tm-svg-icon__wrapper tm-social-icons__icon"><svg height="16" width="16" class="tm-svg-img tm-svg-icon"><title>Facebook</title> <use xlink:href="/img/social-icons-sprite.svg#social-logo-facebook"></use></svg></a><a href="https://twitter.com/habr_com" rel="nofollow noopener noreferrer" target="_blank" class="tm-svg-icon__wrapper tm-social-icons__icon"><svg height="16" width="16" class="tm-svg-img tm-svg-icon"><title>Twitter</title> <use xlink:href="/img/social-icons-sprite.svg#social-logo-twitter"></use></svg></a><a href="https://vk.com/habr" rel="nofollow noopener noreferrer" target="_blank" class="tm-svg-icon__wrapper tm-social-icons__icon"><svg height="16" width="16" class="tm-svg-img tm-svg-icon"><title>VK</title> <use xlink:href="/img/social-icons-sprite.svg#social-logo-vkontakte"></use></svg></a><a href="https://telegram.me/habr_com" rel="nofollow noopener noreferrer" target="_blank" class="tm-svg-icon__wrapper tm-social-icons__icon"><svg height="16" width="16" class="tm-svg-img tm-svg-icon"><title>Telegram</title> <use xlink:href="/img/social-icons-sprite.svg#social-logo-telegram"></use></svg></a><a href="https://www.youtube.com/channel/UCd_sTwKqVrweTt4oAKY5y4w" rel="nofollow noopener noreferrer" target="_blank" class="tm-svg-icon__wrapper tm-social-icons__icon"><svg height="16" width="16" class="tm-svg-img tm-svg-icon"><title>Youtube</title> <use xlink:href="/img/social-icons-sprite.svg#social-logo-youtube"></use></svg></a><a href="https://zen.yandex.ru/habr" rel="nofollow noopener noreferrer" target="_blank" class="tm-svg-icon__wrapper tm-social-icons__icon"><svg height="16" width="16" class="tm-svg-img tm-svg-icon"><title>Яндекс Дзен</title> <use xlink:href="/img/social-icons-sprite.svg#social-logo-zen"></use></svg></a></div> <DIV class="v-portal" style="display:none;"></DIV> <button class="tm-footer__link"><svg height="16" width="16" class="tm-svg-img tm-footer__icon"><title>Язык</title> <use xlink:href="/img/megazord-v28.617e16ca..svg#lang"></use></svg>
+        Настройка языка
+      </button> <a href="/ru/feedback/" class="tm-footer__link">
+        Техническая поддержка
+      </a> <a href="/berserk-mode-nope" class="tm-footer__link">
+        Вернуться на старую версию
+      </a> <div class="tm-footer-copyright"><span class="tm-copyright"><span class="tm-copyright__years">© 2006–2023, </span> <span class="tm-copyright__name"><a href="https://company.habr.com/" rel="noopener" target="_blank" class="tm-copyright__link">Habr</a></span></span></div></div></div></div> <!----> <!----></div> <div class="vue-portal-target"></div></div>
+<script>window.__INITIAL_STATE__={"adblock":{"hasAcceptableAdsFilter":false,"hasAdblock":false},"articlesList":{"articlesList":{"722568":{"id":"722568","timePublished":"2023-03-15T12:55:35+00:00","isCorporative":true,"lang":"ru","titleHtml":"6 простых принципов написания приложения на Vue, которое легко поддерживать (часть 2)","leadData":{"textHtml":"\u003Cp\u003EПривет! Я Наталья Калачева, Frontend-разработчик в \u003Ca href=\"https:\u002F\u002Fagima.ru\u002F?utm_source=habr&amp;utm_medium=article&amp;utm_campaign=kalacheva_front_2\"\u003EAGIMA\u003C\u002Fa\u003E. Эта статья посвящена правилам, которые помогают упростить поддержку и расширение приложений на Vue. Тут я рассказываю, как организовать хранение компонентов, стилей и плагинов, когда использовать стор и полезные функции Vue. \u003Ca href=\"https:\u002F\u002Fhabr.com\u002Fru\u002Fcompany\u002Fagima\u002Fblog\u002F722332\u002F\"\u003E\u003Cu\u003EПервые 3 принципа я опубликовала вчера.\u003C\u002Fu\u003E\u003C\u002Fa\u003E Здесь еще 3.\u003C\u002Fp\u003E\u003Cp\u003E\u003C\u002Fp\u003E","imageUrl":"https:\u002F\u002Fhabrastorage.org\u002Fgetpro\u002Fhabr\u002Fupload_files\u002F48b\u002F33c\u002Feda\u002F48b33ceda5511849430a1d23fd49e9a9.jpg","buttonTextHtml":"Читать далее","image":{"url":"https:\u002F\u002Fhabrastorage.org\u002Fgetpro\u002Fhabr\u002Fupload_files\u002F48b\u002F33c\u002Feda\u002F48b33ceda5511849430a1d23fd49e9a9.jpg","fit":"cover","positionY":0,"positionX":0}},"editorVersion":"2.0","postType":"article","postLabels":[],"author":{"id":"3512497","alias":"nkalacheva","fullname":"Наталья Калачева","avatarUrl":"\u002F\u002Fhabrastorage.org\u002Fgetpro\u002Fhabr\u002Favatars\u002Fa6c\u002Ffda\u002F983\u002Fa6cfda9839b5ac4bfe5706c96bb16676.jpg","speciality":"Frontend","scoreStats":{"score":32,"votesCount":32},"rating":51,"relatedData":null,"contacts":[],"authorContacts":[],"paymentDetails":{"paymentYandexMoney":null,"paymentPayPalMe":null,"paymentWebmoney":null}},"statistics":{"commentsCount":2,"favoritesCount":53,"readingCount":789,"score":33,"votesCount":33,"votesCountPlus":33,"votesCountMinus":0},"hubs":[{"id":"15304","alias":"agima","type":"corporative","title":"Блог компании AGIMA","titleHtml":"Блог компании AGIMA","isProfiled":false,"relatedData":null},{"id":"357","alias":"javascript","type":"collective","title":"JavaScript","titleHtml":"JavaScript","isProfiled":true,"relatedData":null},{"id":"6345","alias":"mobile_dev","type":"collective","title":"Разработка мобильных приложений","titleHtml":"Разработка мобильных приложений","isProfiled":true,"relatedData":null},{"id":"21296","alias":"vuejs","type":"collective","title":"VueJS","titleHtml":"VueJS","isProfiled":true,"relatedData":null}],"flows":[{"id":"1","alias":"develop","title":"Разработка","titleHtml":"Разработка"}],"relatedData":null,"textHtml":"\u003Cdiv xmlns=\"http:\u002F\u002Fwww.w3.org\u002F1999\u002Fxhtml\"\u003E\u003Cp\u003EПривет! Я Наталья Калачева, Frontend-разработчик в \u003Ca href=\"https:\u002F\u002Fagima.ru\u002F?utm_source=habr&amp;utm_medium=article&amp;utm_campaign=kalacheva_front_2\"\u003EAGIMA\u003C\u002Fa\u003E. Эта статья посвящена правилам, которые помогают упростить поддержку и расширение приложений на Vue. Тут я рассказываю, как организовать хранение компонентов, стилей и плагинов, когда использовать стор и полезные функции Vue. \u003Ca href=\"https:\u002F\u002Fhabr.com\u002Fru\u002Fcompany\u002Fagima\u002Fblog\u002F722332\u002F\"\u003E\u003Cu\u003EПервые 3 принципа я опубликовала вчера.\u003C\u002Fu\u003E\u003C\u002Fa\u003E Здесь еще 3.\u003C\u002Fp\u003E\u003Cfigure class=\"full-width \"\u003E\u003Cimg src=\"https:\u002F\u002Fhabrastorage.org\u002Fr\u002Fw780q1\u002Fgetpro\u002Fhabr\u002Fupload_files\u002F48b\u002F33c\u002Feda\u002F48b33ceda5511849430a1d23fd49e9a9.jpg\" width=\"2400\" height=\"1200\" data-src=\"https:\u002F\u002Fhabrastorage.org\u002Fgetpro\u002Fhabr\u002Fupload_files\u002F48b\u002F33c\u002Feda\u002F48b33ceda5511849430a1d23fd49e9a9.jpg\" data-blurred=\"true\"\u002F\u003E\u003C\u002Ffigure\u003E\u003Ch2\u003E4. Оборачивать библиотеки при инициализации\u003C\u002Fh2\u003E\u003Cp\u003EЛучше всего создавать отдельный файл для инициализации широко используемых плагинов. Например, вместо того чтобы тянуть Axios в компонентах непосредственно из зависимостей, вы можете создать класс с более общим именем — такой, как HTTP, чьи методы вызывают Axios под капотом. Например:\u003C\u002Fp\u003E\u003Cpre\u003E\u003Ccode class=\"javascript\"\u003Eimport axios from 'axios';\nclass $Http {\n constructor(options) {\n   this.instance = axios.create({\n     baseURL: options?.baseURL ?? '',\n     headers: options?.headers ?? {},\n     params: options?.params ?? {},\n   });\n }\n get = async (resource, params) =\u003E this.instance.get(resource, { params });\n \u002F\u002F другие методы класса, интерцепторы и т.д.\n}\nexport default $Http;\u003C\u002Fcode\u003E\u003C\u002Fpre\u003E\u003Cp\u003EНа первый взгляд, это бесполезный модуль, ведь он делает то же самое, что делал бы модуль из зависимости. Только вы вместо этого пишете импорт HTTP из «http.js». Однако это облегчает переиспользование кода и расширение общей функциональности. Мы можем расширять наш класс и добавлять новые функции\u002Fконфиги глобально.\u003C\u002Fp\u003E\u003Cp\u003EНапример, с Axios это может быть использование интерсепторов. Мы можем всегда предупреждать пользователя, когда запрос \u003Cstrong\u003Eajax\u003C\u002Fstrong\u003E терпит неудачу, а не использовать \u003Cstrong\u003Ecatch\u003C\u002Fstrong\u003E везде, где делаем запрос.\u003C\u002Fp\u003E\u003Cp\u003EЕсли же мы решим перейти на другой плагин или обновиться до версии с критическими изменениями, не нужно рыскать по всей кодовой базе в поиске всех мест, где это использовалось. Достаточно адаптировать наш класс к изменениям.\u003C\u002Fp\u003E\u003Cp\u003EКонечно, не все библиотеки стоит оборачивать. Если есть сомнения, можно задать себе ряд вопросов:\u003C\u002Fp\u003E\u003Cul\u003E\u003Cli\u003E\u003Cp\u003E\u003Cstrong\u003EВы не уверены в том, что реализация библиотеки на 100% удовлетворяет будущие задачи?\u003C\u002Fstrong\u003E\u003C\u002Fp\u003E\u003C\u002Fli\u003E\u003Cli\u003E\u003Cp\u003E\u003Cstrong\u003EЭта зависимость требует настройки и расширения функционала?\u003C\u002Fstrong\u003E\u003C\u002Fp\u003E\u003C\u002Fli\u003E\u003Cli\u003E\u003Cp\u003E\u003Cstrong\u003EБудете ли это переиспользовать в разных частях приложения?\u003C\u002Fstrong\u003E\u003C\u002Fp\u003E\u003C\u002Fli\u003E\u003Cli\u003E\u003Cp\u003E\u003Cstrong\u003EВы будете использовать только часть функционала?\u003C\u002Fstrong\u003E\u003C\u002Fp\u003E\u003C\u002Fli\u003E\u003C\u002Ful\u003E\u003Cp\u003EЕсли я могу с уверенностью ответить «да» на часть этих вопросов, значит, дополнительная работа над оберткой оправдана.\u003C\u002Fp\u003E\u003Ch2\u003E5. Валидировать пропсы, использовать типы\u003C\u002Fh2\u003E\u003Cp\u003EВо время разработки большого проекта вы можете забыть точный тип и формат данных, которые вы передавали в компонент. Поэтому важно всегда описывать тип данных. Это делает код более читабельным и помогает подсветить ошибки на этапе разработки. Vue предоставляет мощный встроенный механизм для проверки этих данных. Это гарантирует, что компонент будет использоваться по назначению.\u003C\u002Fp\u003E\u003Cpre\u003E\u003Ccode class=\"javascript\"\u003E\nexport default {\n name: 'BlockName',\n props: {\n   title: {\n     type: String,\n     default: ''\n   }\n }\n}\n\u003C\u002Fcode\u003E\u003C\u002Fpre\u003E\u003Cp\u003EЕсли вы используете Typescript, то сложные типы можно описывать с помощью интерфейсов:\u003C\u002Fp\u003E\u003Cpre\u003E\u003Ccode class=\"typescript\"\u003Eimport { PropType, defineComponent } from 'vue'\n\n\ninterface IItem {\n id: string\n title: string\n}\n\n\nexport default defineComponent({\n name: 'BaseList',\n props: {\n   list: {\n     type: Array as PropType&lt;IItem[]\u003E,\n     default: () =\u003E []\n   }\n }\n})\n\u003C\u002Fcode\u003E\u003C\u002Fpre\u003E\u003Cp\u003EЛучший способ ограничить пропсы определенным набором значений — использовать параметр валидатора. Это функция проверки, которая принимает значение и возвращает один из двух результатов — true или false.\u003C\u002Fp\u003E\u003Cpre\u003E\u003Ccode class=\"typescript\"\u003Eexport default {\n name: 'BaseIcon',\n props: {\n   position: {\n     type: String,\n     validator: s =\u003E ['top', 'left'].includes(s)\n   }\n }\n};\n\u003C\u002Fcode\u003E\u003C\u002Fpre\u003E\u003Cp\u003EВсё вышеперечисленное справедливо при использовании Vue 3 либо с \u003Cstrong\u003Eoptions\u003C\u002Fstrong\u003E, либо с \u003Cstrong\u003Ecomposition API\u003C\u002Fstrong\u003E. Разница только в \u003Cstrong\u003Esetup\u003C\u002Fstrong\u003E: пропсы должны быть объявлены с помощью функции \u003Cstrong\u003EdefineProps()\u003C\u002Fstrong\u003E. Например:\u003C\u002Fp\u003E\u003Cpre\u003E\u003Ccode class=\"typescript\"\u003E&lt;script setup lang=\"ts\"\u003E\ninterface IProps {\n title: string\n list: Array&lt;IItem\u003E\n}\n\n\nconst { title, list } = defineProps&lt;IProps\u003E()\n&lt;\u002Fscript\u003E\u003C\u002Fcode\u003E\u003C\u002Fpre\u003E\u003Cp\u003EВ сочетании с TypeScript встроенные механизмы валидации и типизирования пропсов могут обеспечить правильное использование компонента, уменьшить количество ошибок и упростить общее понимание кода.\u003C\u002Fp\u003E\u003Ch2\u003E6. Организовать стили\u003C\u002Fh2\u003E\u003Cp\u003EДаже если логика нашего приложения написана идеально, CSS может значительно подпортить внешний вид и создать множество проблем при дебаге и расширении\u002Fизменении дизайна. Важно уделять стилям повышенное внимание, чтобы избежать конфликтов и непредсказуемого поведения.\u003C\u002Fp\u003E\u003Cp\u003EЕсть множество методологий написания CSS, например БЭМ, OOCSS, SMACSS, Atomic CSS и т. п. Среди этих подходов нет идеального — у всех свои плюсы и минусы. Поэтому можно выбрать один, а можно совместить несколько. \u003Cstrong\u003EВажно договориться с командой о едином подходе\u003C\u002Fstrong\u003E. Тогда масштабирование проекта будет даваться легче.\u003C\u002Fp\u003E\u003Cp\u003E\u003Cstrong\u003EНужно прописать глобальные стили, которые распространяются на всё приложение.\u003C\u002Fstrong\u003E Есть несколько стилей, которые мы хотим применить ко всем компонентам. Например, normalize.css или reset.css. Или общие стили, такие как шрифты, размеры заголовка, цвета и CSS-переменные. Добавим их в тег стиля App.vue\u003C\u002Fp\u003E\u003Cpre\u003E\u003Ccode class=\"javascript\"\u003E&lt;template\u003E\n &lt;div id=\"app\"\u003E\n   &lt;main\u003E\n     &lt;router-view\u003E&lt;\u002Frouter-view\u003E\n   &lt;\u002Fmain\u003E\n &lt;\u002Fdiv\u003E\n&lt;\u002Ftemplate\u003E\n\n\n&lt;style\u003E\nbody {\n margin: 0;\n}\n&lt;\u002Fstyle\u003E\u003C\u002Fcode\u003E\u003C\u002Fpre\u003E\u003Cp\u003E\u003Cstrong\u003EСтили компонента всегда изолируются при помощи директивы scoped. \u003C\u002Fstrong\u003EЭто гарантирует, что любой стиль CSS, определенный в компоненте, будет применяться только к этому шаблону и не создаст конфликта стилей за его пределами.\u003C\u002Fp\u003E\u003Cpre\u003E\u003Ccode class=\"css\"\u003E&lt;style lang=\"scss\" scoped\u003E\n.Item {\n &amp;__text {\n   margin-bottom: 30px;\n }\n}\n&lt;\u002Fstyle\u003E\n\u003C\u002Fcode\u003E\u003C\u002Fpre\u003E\u003Cp\u003EЕсли стилей одного компонента много или одни и те же стили переиспользуются в нескольких компонентах, в \u003Cstrong\u003Eassets\u003C\u002Fstrong\u003E я создаю отдельную папку \u003Cstrong\u003Estyles\u002Fcomponents\u003C\u002Fstrong\u003E и добавляю туда стили, которые в дальнейшем импортирую в компонент.\u003C\u002Fp\u003E\u003Cpre\u003E\u003Ccode class=\"css\"\u003E&lt;style lang=\"scss\" scoped\u003E\n@import \"@\u002Fassets\u002Fstyles\u002Fcomponents\u002Ftable.scss\";\n&lt;\u002Fstyle\u003E\u003C\u002Fcode\u003E\u003C\u002Fpre\u003E\u003Cp\u003EОднако использование \u003Cstrong\u003Escoped\u003C\u002Fstrong\u003E не отменяет использование классов для стилизации элементов. Это наиболее производительный вариант селектора по сравнению с названием тегов. \u003Ca href=\"https:\u002F\u002Fvuejs.org\u002Fapi\u002Fsfc-css-features.html#scoped-css\"\u003E\u003Cu\u003EПодробнее об этом в документации\u003C\u002Fu\u003E\u003C\u002Fa\u003E.\u003Cbr\u002F\u003E\u003Cbr\u002F\u003E\u003Cstrong\u003EКак альтернативу можно использовать CSS Module.\u003C\u002Fstrong\u003E Они также решают проблему конфликта стилей. Но модули предполагают динамический рендеринг и отображение имен классов (например, можно настроить классы в зависимости от среды разработки или props).\u003C\u002Fp\u003E\u003Cpre\u003E\u003Ccode class=\"javascript\"\u003E&lt;template\u003E \n &lt;section\u003E\n   &lt;div\u003E\n     &lt;h1 :class=\"$style.heading\"\u003EЗаголовок&lt;\u002Fh1\u003E\n   &lt;\u002Fdiv\u003E\n &lt;\u002Fsection\u003E\n&lt;\u002Ftemplate\u003E\n\n\n\n\n&lt;style module\u003E\n.heading {\n font-size: 50px;\n font-weight: 900;\n text-align: center;\n}\n&lt;\u002Fstyle\u003E\n\u003C\u002Fcode\u003E\u003C\u002Fpre\u003E\u003Cp\u003E\u003Cbr\u002F\u003EДанный модуль генерирует следующий CSS:\u003C\u002Fp\u003E\u003Cpre\u003E\u003Ccode class=\"css\"\u003E.ComponentName__heading__2Kxy { \n font-size: 50px;\n font-weight: 900;\n text-align: center;\n}\n\u003C\u002Fcode\u003E\u003C\u002Fpre\u003E\u003Ch2\u003EЗаключение\u003C\u002Fh2\u003E\u003Cp\u003EЭта статья дает краткое описание хороших практик при разработке современных клиентских приложений на Vue. Тем не менее, нет правильного или неправильного ответа. Ни один подход определенно не лучше других. Это полностью зависит от ситуации и предпочтений разработчика.\u003C\u002Fp\u003E\u003Cp\u003EЕсть много хороших практик, которые не перечислены в этой статье. Пожалуйста, не стесняйтесь оставлять комментарии и дайте мне знать, если знаете что-то интересное. \u003Ca href=\"https:\u002F\u002Ft.me\u002Fagimadev_chat\"\u003E\u003Cu\u003EА еще присоединяйтесь к нашему телеграм-каналу.\u003C\u002Fu\u003E\u003C\u002Fa\u003E\u003C\u002Fp\u003E\u003Cp\u003E\u003C\u002Fp\u003E\u003C\u002Fdiv\u003E","tags":[{"titleHtml":"vue.js"},{"titleHtml":"frontend"},{"titleHtml":"front-end разработка"}],"metadata":{"stylesUrls":[],"scriptUrls":[],"shareImageUrl":"https:\u002F\u002Fhabrastorage.org\u002Fgetpro\u002Fhabr\u002Fupload_files\u002F48b\u002F33c\u002Feda\u002F48b33ceda5511849430a1d23fd49e9a9.jpg","shareImageWidth":1200,"shareImageHeight":630,"vkShareImageUrl":"https:\u002F\u002Fhabrastorage.org\u002Fgetpro\u002Fhabr\u002Fupload_files\u002F48b\u002F33c\u002Feda\u002F48b33ceda5511849430a1d23fd49e9a9.jpg","schemaJsonLd":"{\"@context\":\"http:\\\u002F\\\u002Fschema.org\",\"@type\":\"Article\",\"mainEntityOfPage\":{\"@type\":\"WebPage\",\"@id\":\"https:\\\u002F\\\u002Fhabr.com\\\u002Fru\\\u002Fcompany\\\u002Fagima\\\u002Fblog\\\u002F722568\\\u002F\"},\"headline\":\"6 простых принципов написания приложения на Vue, которое легко поддерживать (часть 2)\",\"datePublished\":\"2023-03-15T15:55:35+03:00\",\"dateModified\":\"2023-03-15T17:30:14+03:00\",\"author\":{\"@type\":\"Person\",\"name\":\"Наталья Калачева\"},\"publisher\":{\"@type\":\"Organization\",\"name\":\"Habr\",\"logo\":{\"@type\":\"ImageObject\",\"url\":\"https:\\\u002F\\\u002Fhabrastorage.org\\\u002Fwebt\\\u002Fa_\\\u002Flk\\\u002F9m\\\u002Fa_lk9mjkccjox-zccjrpfolmkmq.png\"}},\"description\":\"Привет! Я Наталья Калачева, Frontend-разработчик в AGIMA. Эта статья посвящена правилам, которые помогают упростить поддержку и расширение приложений на Vue. Тут...\",\"url\":\"https:\\\u002F\\\u002Fhabr.com\\\u002Fru\\\u002Fcompany\\\u002Fagima\\\u002Fblog\\\u002F722568\\\u002F#post-content-body\",\"about\":[\"c_agima\",\"h_javascript\",\"h_mobile_dev\",\"h_vuejs\",\"f_develop\"],\"image\":[\"https:\\\u002F\\\u002Fhabr.com\\\u002Fshare\\\u002Fpublication\\\u002F722568\\\u002Fa0483ecbe7e74663af7ef4cb9279838a\\\u002F\",\"https:\\\u002F\\\u002Fhabrastorage.org\\\u002Fgetpro\\\u002Fhabr\\\u002Fupload_files\\\u002F48b\\\u002F33c\\\u002Feda\\\u002F48b33ceda5511849430a1d23fd49e9a9.jpg\"]}","metaDescription":"Привет! Я Наталья Калачева, Frontend-разработчик в AGIMA . Эта статья посвящена правилам, которые помогают упростить поддержку и расширение приложений на Vue. Тут я рассказываю, как организовать...","mainImageUrl":null,"amp":true,"customTrackerLinks":[]},"polls":[],"commentsEnabled":true,"rulesRemindEnabled":false,"votesEnabled":true,"status":"published","plannedPublishTime":null,"checked":null,"hasPinnedComments":false,"format":"review","readingTime":5,"complexity":null,"isEditorial":false}},"articlesIds":{},"isLoading":false,"pagesCount":{},"route":{},"reasonsList":null,"view":"list","lastVisitedRoute":{},"ssrCommentsArticleIds":[],"karma":{"userReasonsList":null}},"authorContribution":{"authors":{}},"betaTest":{"currentAnnouncement":null,"announcements":{},"announcementCards":null,"announcementComments":{},"announcementCommentThreads":{},"announcementCommentingStatuses":{},"archivedList":[]},"authorStatistics":{"articleRefs":{},"articleIds":{},"pagesCount":{},"route":{},"viewsCount":[],"maxStatsCount":{}},"career":{"seoLandings":[],"hubs":""},"comments":{"articleComments":{"722568":{"refs":{"25329210":{"id":"25329210","parentId":null,"level":0,"timePublished":"2023-03-15T13:27:05+00:00","timeChanged":null,"isSuspended":false,"status":"published","score":0,"votesCount":0,"message":"\u003Cdiv xmlns=\"http:\u002F\u002Fwww.w3.org\u002F1999\u002Fxhtml\"\u003E\u003Cp\u003E135 просмотров и 27 \"плюсиков\"\u003C\u002Fp\u003E\u003Cp\u003EСразу видно - хорошая статья\u003C\u002Fp\u003E\u003C\u002Fdiv\u003E","editorVersion":2,"author":{"id":"2222800","alias":"gmtd","fullname":null,"avatarUrl":null,"speciality":"Гость"},"isAuthor":false,"isPostAuthor":false,"isNew":false,"isFavorite":false,"isCanEdit":false,"timeEditAllowedTill":null,"children":["25329478"],"vote":{"value":null,"isCanVote":false},"isPinned":false},"25329478":{"id":"25329478","parentId":"25329210","level":1,"timePublished":"2023-03-15T14:26:53+00:00","timeChanged":null,"isSuspended":false,"status":"published","score":0,"votesCount":0,"message":"\u003Cdiv xmlns=\"http:\u002F\u002Fwww.w3.org\u002F1999\u002Fxhtml\"\u003E\u003Cp\u003EИли \"плюсы\" накручены 🤔\u003C\u002Fp\u003E\u003C\u002Fdiv\u003E","editorVersion":2,"author":{"id":"1369996","alias":"ht-pro","fullname":"Артем Дионтьев","avatarUrl":"\u002F\u002Fhabrastorage.org\u002Fgetpro\u002Fhabr\u002Favatars\u002Fede\u002F277\u002Fe7d\u002Fede277e7d849d21366ebb73a242fcf64.jpg","speciality":"Front-End Developer"},"isAuthor":false,"isPostAuthor":false,"isNew":false,"isFavorite":false,"isCanEdit":false,"timeEditAllowedTill":null,"children":[],"vote":{"value":null,"isCanVote":false},"isPinned":false}},"root":["25329210"]}},"articlePinnedComments":{},"searchCommentsResults":null,"pagesCount":null,"commentAccess":{"isCanComment":false,"cantCommentReasonKey":"AUTH_REQUIRED","cantCommentReason":"Authorization required","data":null},"scrollParents":{},"pageArticleComments":{"lastViewedComment":0,"postId":null,"lastCommentTimestamp":1678890413,"moderated":[],"moderatedIds":[],"commentRoute":""}},"companies":{"companyRefs":{},"companyIds":{},"companyTopIds":{},"pagesCount":{},"companyProfiles":{},"companiesCategories":[],"companiesCategoriesTotalCount":0,"companiesWidgets":{},"companiesWorkers":{},"companiesFans":{},"route":{},"isLoading":false,"companyWorkersLoading":false,"companyFansLoading":false,"vacancies":{},"companiesGalleries":{},"companiesBanners":{},"companiesLandingVacancies":{},"companiesTechnologies":{},"workplaceInfo":null},"companyAdmin":{"companyInfo":null,"companyInfoLoading":false,"faqArticles":null,"brandingPreviewImageUrl":null,"jivoStatus":0,"adminNotifications":null},"companiesContribution":{"hubs":{},"flows":{},"companyRefs":{}},"companyHubsContribution":{"contributionRefs":{"hubRefs":{},"hubIds":{}}},"conversation":{"messages":[],"respondent":null,"isLoadMore":false},"conversations":{"conversations":[],"unreadCount":0,"pagesCount":0},"desktopState":{"desktopFl":null,"desktopHl":null,"isChecked":false,"isLoginDemanded":false},"docs":{"menu":{},"articles":{},"mainMenu":[],"loading":{"main":false,"dropdown":false,"article":false}},"feature":{"isProbablyVisible":true},"flows":{"updates":{"countNewPostsBySubscription":null,"countNewPostsAll":67,"countNewNewsAll":54},"flows":[{"alias":"develop","id":"1","route":{"name":"FLOW_PAGE","params":{"flowName":"develop"}}},{"alias":"admin","id":"6","route":{"name":"FLOW_PAGE","params":{"flowName":"admin"}}},{"alias":"design","id":"2","route":{"name":"FLOW_PAGE","params":{"flowName":"design"}}},{"alias":"management","id":"3","route":{"name":"FLOW_PAGE","params":{"flowName":"management"}}},{"alias":"marketing","id":"4","route":{"name":"FLOW_PAGE","params":{"flowName":"marketing"}}},{"alias":"popsci","id":"7","route":{"name":"FLOW_PAGE","params":{"flowName":"popsci"}}}]},"global":{"isPwa":false,"device":"mobile","isHabrCom":true},"hubs":{"hubRefs":{},"hubIds":{},"pagesCount":{},"isLoading":false,"route":{}},"hubsBlock":{"hubRefs":{},"hubIds":{}},"i18n":{"fl":"ru","hl":"ru"},"info":{"infoPage":{},"isLoading":true},"location":{"urlStruct":{"protocol":null,"slashes":null,"auth":null,"host":null,"port":null,"hostname":null,"hash":null,"search":null,"query":{},"pathname":null,"path":null,"href":""}},"me":{"user":null,"uuid":null,"ppgDemanded":false,"karmaResetInfo":{"canReincarnate":null,"wasReincarnated":null,"currentScore":null},"notes":null},"modal":{"modals":[]},"mostReadingList":{"mostReadingListIds":[],"mostReadingListRefs":null,"promoPost":null},"ppa":{"articles":{},"card":null,"transactions":null,"totalTransactions":null,"isAccessible":null},"projectsBlocks":{"activeBlocks":{}},"promoData":{"isLoading":false,"hasLoaded":false,"featurer":null,"megaposts":null,"promoLinks":null,"promoPosts":null},"pullRefresh":{"shouldRefresh":false},"sandbox":{"articleIds":[],"articleRefs":{},"pagesCount":null,"route":{},"lastVisitedRoute":{},"isLoading":false},"search":{"searchQueryError":null},"settingsOther":{"inputs":{"uiLang":{"errors":[],"ref":null,"value":""},"articlesLangEnglish":{"errors":[],"ref":null,"value":false},"articlesLangRussian":{"errors":[],"ref":null,"value":false},"agreement":{"errors":[],"ref":null,"value":false},"email":{"errors":[],"ref":null,"value":true},"digest":{"errors":[],"ref":null,"value":true}}},"similarList":{"similarListIds":[],"similarListRefs":null},"ssr":{"error":null,"isDataLoaded":false,"isDataLoading":false,"isHydrationFailed":false,"isServer":false},"stories":{"stories":[]},"technotext":{"years":[],"technotextDocForNominees":null,"technotextDocForWinners":null,"technotextInfo":{},"technotextInfoLoading":false,"technotextWinners":{},"technotextWinnersLoading":false},"userHubsContribution":{"contributionRefs":{"hubRefs":{},"hubIds":{}}},"userInvites":{"availableInvites":0,"usedInvitesIds":[],"usedInvitesRefs":{},"usedInvitesPagesCount":0,"unusedInvitesIds":[],"unusedInvitesRefs":{},"unusedInvitesPagesCount":0},"userVotes":{"karmaVotesList":[],"karmaVotesPagesCount":null,"karmaVotesListLoading":false,"commentsVotesList":[],"commentsVotesPagesCount":null,"commentsVotesListLoading":false,"postsVotesList":[],"postsVotesPagesCount":null,"postsVotesListLoading":false,"userVotesList":[],"userVotesPagesCount":null,"userVotesListLoading":false},"users":{"authorRefs":{},"authorIds":{},"pagesCount":{},"authorProfiles":{},"userHubs":{},"userInvitations":{},"authorFollowers":{},"authorFollowed":{},"userSpecialization":{},"karmaStats":[],"statistics":null,"isLoading":false,"authorFollowersLoading":false,"authorFollowedLoading":false,"userHubsLoading":false,"userInvitationsLoading":false,"route":{}},"viewport":{"prevScrollY":{},"scrollY":0,"width":0},"tracker":{"items":{},"pagesCache":{},"markedViewedSilently":{},"markedRead":{},"unreadCounters":{"applications":null,"system":null,"mentions":null,"subscribers":null,"posts_and_comments":null},"unviewedCounters":{"applications":null,"system":null,"mentions":null,"subscribers":null,"posts_and_comments":null}}};(function(){var s;(s=document.currentScript||document.scripts[document.scripts.length-1]).parentNode.removeChild(s);}());</script>
+<script src="https://assets.habr.com/habr-web/js/chunk-vendors.76685433.js" defer></script><script src="https://assets.habr.com/habr-web/js/page-article-comments.dcfe697f.js" defer></script><script src="https://assets.habr.com/habr-web/js/7298.c8f1d73c.js" defer></script><script src="https://assets.habr.com/habr-web/js/app.067cb56a.js" defer></script>
+
+
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-726094-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+    </script>
+  
+  <script type="text/javascript" >
+    (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+    m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+    (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+    ym(24049213, "init", {
+      defer:true,
+      trackLinks:true,
+      accurateTrackBounce:true,
+      webvisor:false,
+    });
+  </script>
+  <noscript>
+    <div>
+      <img src="https://mc.yandex.ru/watch/24049213" style="position:absolute; left:-9999px;" alt="" />
+    </div>
+  </noscript>
+  
+    <script type="text/javascript">
+      window.addEventListener('load', function () {
+        setTimeout(() => {
+          const img = new Image();
+          img.src = 'https://vk.com/rtrg?p=VK-RTRG-421343-57vKE';
+        }, 0);
+      });
+    </script>
+  
+<script src="/js/ads.js" onload="window['zhY4i4nJ9K'] = true"></script>
+</body>
+</html>
+
